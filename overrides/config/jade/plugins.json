@@ -124,11 +124,28 @@
   "pipez": {
     "pipe": true
   },
+  "appliedcooking": {
+    "kitchen_station": true
+  },
+  "twilightforest": {
+    "quest_ram_wool": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "corpse": {
+    "corpse": true
+  },
   "cookingforblockheads": {
     "fridge": true,
     "oven": true,
     "sink": true,
     "milk_jar": true,
     "toaster": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "display.content": true,
+    "display.status": true
   }
 }
