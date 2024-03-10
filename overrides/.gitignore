@@ -1,0 +1,14 @@
+/*
+!/kubejs/
+!/kubejs/*
+!/config/
+!/config/*
+/config/luckperms/luckperms-h2-v2.mv.db
+/config/libraryferret_1.properties
+/config/bettervillage_1.properties
+/config/worldedit/worldedit.properties
+!/.gitignore
+!/defaultconfig/
+!/defaultconfig/*
+!/world/serverconfig/
+!/world/serverconfig/*

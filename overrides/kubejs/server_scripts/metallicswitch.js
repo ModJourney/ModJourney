@@ -66,25 +66,6 @@ const thermal_plates = [
     "tin"    
 ]
 
-//thermal:${thermal_ingot}_ingot
-const thermal_ingot = [
-    "bronze",
-    "constantan",
-    "copper",
-    "electrum",
-    "enderium",
-    "gold",
-    "invar",
-    "iron",
-    "lead",
-    "lumium",
-    "netherite",
-    "nickel",
-    "signalum",
-    "silver",
-    "tin"
-]
-
 ServerEvents.recipes(event => {
 
     //umschreiben der Zahnräder 

@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
       },
       "result": [{
           "item": output,
-          "chance": 6.5
+          "chance": 1.5
         }, {
           "item": "minecraft:gravel",
           "chance": 0.2
@@ -220,3 +220,7 @@ ServerEvents.recipes(event => {
 //Legierungen mit einfügen
   //pulverisierer
   //induktionsschmelze
+
+
+  /* Fluid Sieving Machine*/
+  /* thermal:niter_dust (salpeter) implementieren */
