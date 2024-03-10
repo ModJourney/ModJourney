@@ -1,12 +1,13 @@
 // priority: 0
 
-legierungen_2 = [
+/*legierungen_2 = [
     'bronze', 
     'constantan',
     'brass',
     'invar',
     'steel',
     'electrum'
+    
 ]
 
 legierungen_3 = [
@@ -14,7 +15,7 @@ legierungen_3 = [
     'lumium',
     'signalum'
 ]
-
+*/
 /*
 Legierungen müssen ggf. spezieller behandelt werden.
 - sämtliche crafting Inputs mittels Werkbank Bulk anpassen
