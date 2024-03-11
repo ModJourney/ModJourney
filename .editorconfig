@@ -22,3 +22,7 @@ indent_style = space
 [*.{toml,snbt}]
 indent_size = 4
 indent_style = tab
+
+[.git{attributes,config}]
+indent_size = 4
+indent_style = tab
