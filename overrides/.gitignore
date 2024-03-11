@@ -8,7 +8,7 @@
 /config/bettervillage_1.properties
 /config/worldedit/worldedit.properties
 !/.gitignore
-!/defaultconfig/
-!/defaultconfig/*
+!/defaultconfigs/
+!/defaultconfigs/*
 !/world/serverconfig/
 !/world/serverconfig/*
