@@ -171,6 +171,8 @@ ServerEvents.recipes(event => {
     crusher_complete_free("alltheores:" + element + "_dust", 1,"forge:gears/" + element, 1)
     crusher_complete_free("alltheores:" + element + "_dust", 1,"forge:plates/" + element, 1)
   });
+
+ 
   //forge_ores_6.forEach(element => {
     //sägemühle enderIO erz zu 2 Netherquarz 1 x dust und ein Netherrack 2400 pikoI
     //sägemühle enderIO Netherquarz zu 2 dust
