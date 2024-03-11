@@ -7,8 +7,15 @@
 /config/libraryferret_1.properties
 /config/bettervillage_1.properties
 /config/worldedit/worldedit.properties
-!/.gitignore
-!/defaultconfig/
-!/defaultconfig/*
+!/defaultconfigs/
+!/defaultconfigs/*
 !/world/serverconfig/
 !/world/serverconfig/*
+
+# Dont ignore git meta-files
+!/.gitignore
+!/.gitattributes
+
+# Dont ignore dev-tools
+!/dev-tools/
+
