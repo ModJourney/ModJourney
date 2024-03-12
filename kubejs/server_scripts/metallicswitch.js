@@ -1,70 +1,6 @@
 // priority: 0
  
-//industrialforegoing:${ifg_gear}_gear
-const ifg_gear = [
-    "diamond",
-    "gold",
-    "iron"
-]
 
-//thermal:${thermal_gear}_gear
-const thermal_gear = [
-    "bronze",
-    "constantan",
-    "copper",
-    "diamond",
-    "electrum",
-    "emerald",
-    "enderium",
-    "gold",
-    "invar",
-    "iron",
-    "lead",
-    "lumium",
-    "nickel",
-    "signalum",
-    "silver",
-    "tin",
-    //"quartz",
-    //"ruby",
-    //"sapphire",
-    //"netherite",
-    //"lapis"
-]
-
-//immersiveengineering:plate_${immersive_plates}
-const immersive_plates = [
-    "aluminum",
-    "constantan",
-    "copper",
-    "electrum",
-    "gold",
-    "iron",
-    "lead",
-    "nickel",
-    "silver",
-    "steel",
-    "uranium"
-]
-
-//thermal:${thermal_plates}_plate
-const thermal_plates = [
-    "bronze",
-    "constantan",
-    "copper",
-    "electrum",
-    "enderium",
-    "gold",
-    "invar",
-    "iron",
-    "lead",
-    "lumium",
-    "netherite",
-    "nickel",
-    "signalum",
-    "silver",
-    "tin"    
-]
 
 ServerEvents.recipes(event => {
 
@@ -89,7 +25,7 @@ ServerEvents.recipes(event => {
     //umschreiben der Gears und Platten als Output
     thermal_gear.forEach((element) => {
         event.replaceOutput({},"thermal:" + element + "_plate","alltheores:" + element + "_plate")
-        event.replaceOutput({},"thermal:" + element + "_plate","alltheores:" + element + "_plate")
+        event.replaceOutput({},"thermal:" + element + "_gear","alltheores:" + element + "_gear")
     })
 })
 
