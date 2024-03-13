@@ -4,3 +4,8 @@
 README.md		export-ignore
 dev-tools/		export-ignore
 kubejs-DOKUs/	export-ignore
+
+# Keep files with linux eol, because the mods create them with this eol
+config/ae2/*						text eol=lf
+config/jade/sort-order.json			text eol=lf
+config/xaerominimap_entities.json	text eol=lf

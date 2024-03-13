@@ -19,3 +19,5 @@
 # Dont ignore dev-tools
 !/dev-tools/
 
+# Ignore files containing user specific config
+ /config/spark/activity.json
