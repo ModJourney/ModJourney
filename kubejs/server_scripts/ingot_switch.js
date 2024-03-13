@@ -8,5 +8,6 @@ ServerEvents.recipes(event => {
         output_replace(replace,"nugget")
         output_replace(replace,"block")
         output_replace(replace,"plate")
+        output_replace(replace,"dust")
     })
 })

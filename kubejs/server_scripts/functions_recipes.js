@@ -47,6 +47,21 @@
         */
         var thermal_pulverizing
 
+    //Thermal_Press for gear,plate,packing x 9
+        /**
+         * Hier wird die Thermal Presse angesprochen. auszuwählen sind in Item die zahlen 1 bis 3.
+         * Der Input wird als Tag angegeben. Der Output ist ein Item. 
+         * 1. Packing 3 x 3 || 2. Gear || 3. Plates
+         * @example thermal_press("alltheores:brass_gear", 1, "forge:ingots/brass", 2, 2, 6400)
+         * @param output {string} - Ein spezifisches Item wird erwartet. e.g. "alltheores:brass_gear"
+         * @param val_output {int} - Die Anzahl der Items die erstellt werden. e.g. 1 für ein Zahnrad
+         * @param input {string} - Es wird ein Tag erwartet, was vercraftet werden soll. e.g. "forge:ingots/brass"
+         * @param val_input {int} - Die Anzahl der Items die es benötigt um zu craften. e.g. 2 
+         * @param item {int} - Es wird ein Integar zwischen 1-3 erwartet. Siehe Beschreibung.
+         * @param energy_cost {int} - Es wird ein Integar erwartet. Die Stromkosten, die es zur Herstellung braucht.
+        */
+        var thermal_press
+
     //The mekanism enriching_chamber, with free In- and Output
         
         /** 
@@ -174,6 +189,38 @@ ServerEvents.recipes(event => {
                 }],
                 "energy_mod": 0.5
             });
+        }
+
+        //Thermal_Press for gear,plate,packing x 9
+        thermal_press = (output, val_output, input, val_input, item, energy_cost) => {
+            if (item === 1) {
+                item = "immersiveengineering:mold_packing_9";
+            } else if (item === 2) {
+                item = "immersiveengineering:mold_gear";
+            } else if (item === 3) {
+                item = "immersiveengineering:mold_plate";
+            } else {
+                console.log("\"In der Funktion thermal_press\" ist ein Fehler aufgetreten.")
+            };
+            event.custom({
+                "type": "thermal:press",
+                "ingredients": [
+                {
+                    "tag": input,
+                    "count": val_input
+                },
+                {
+                    "item": item
+                }
+                ],
+                "result": [
+                {
+                    "item": output,
+                    "count": val_output
+                }
+                ],
+                "energy": energy_cost
+            })
         }
 
 
