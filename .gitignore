@@ -19,5 +19,13 @@
 # Dont ignore dev-tools
 !/dev-tools/
 
+# Always ignore Tempfiles and OS generated stuff
+.DS_Store
+[Tt]humbs.db
+[Dd]esktop.ini
+*.old
+*.dat_old
+
 # Ignore files containing user specific config
  /config/spark/activity.json
+ /config/voicechat/username-cache.json
