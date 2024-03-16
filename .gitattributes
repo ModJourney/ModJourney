@@ -9,3 +9,7 @@ kubejs-DOKUs/	export-ignore
 config/ae2/*						text eol=lf
 config/jade/sort-order.json			text eol=lf
 config/xaerominimap_entities.json	text eol=lf
+
+# Add rules for custom diff-tools (requires local configuration to work)
+modlist.html			diff=sort
+manifest.json			diff=modlist-sort
