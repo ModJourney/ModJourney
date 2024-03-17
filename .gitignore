@@ -25,7 +25,9 @@
 [Dd]esktop.ini
 *.old
 *.dat_old
+*.bak
 
 # Ignore files containing user specific config
  /config/spark/activity.json
  /config/voicechat/username-cache.json
+ /config/ItemLocks/nodes/SP/*.ilcks
