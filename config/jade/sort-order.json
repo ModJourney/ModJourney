@@ -90,6 +90,9 @@
   "twilightforest:quest_ram_wool": null,
   "waystones:waystone": null,
   "appliedcooking:kitchen_station": null,
+  "easy_villagers:villager": null,
+  "easy_villagers:converter": null,
+  "easy_villagers:breeder": null,
   "apotheosis:spawner": null,
   "apotheosis:ench": null,
   "apotheosis:adventure": null,
@@ -179,5 +182,8 @@
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
   "ae2:part_mod_name": null,
+  "easy_villagers:villager": null,
+  "easy_villagers:converter": null,
+  "easy_villagers:breeder": null,
   "enderchests:hud": null
 }
