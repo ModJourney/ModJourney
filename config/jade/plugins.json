@@ -144,5 +144,10 @@
     "sink": true,
     "milk_jar": true,
     "toaster": true
+  },
+  "mysticalagriculture": {
+    "infused_farmland": true,
+    "crop": true,
+    "inferium_crop": true
   }
 }
