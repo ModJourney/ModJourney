@@ -33,3 +33,4 @@
  /config/spark/activity.json
  /config/voicechat/username-cache.json
  /config/ItemLocks/nodes/SP/*.ilcks
+ /config/jei/world/local/*
