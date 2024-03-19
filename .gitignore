@@ -1,8 +1,6 @@
 /*
 !/kubejs/
-!/kubejs/*
 !/config/
-!/config/*
 /config/luckperms/luckperms-h2-v2.mv.db
 /config/libraryferret_1.properties
 /config/bettervillage_1.properties
@@ -30,7 +28,7 @@
 *.bak
 
 # Ignore files containing user specific config
- /config/spark/activity.json
- /config/voicechat/username-cache.json
- /config/ItemLocks/nodes/SP/*.ilcks
- /config/jei/world/local/*
+/config/spark/activity.json
+/config/voicechat/username-cache.json
+/config/ItemLocks/nodes/SP/
+/config/jei/world/local/
