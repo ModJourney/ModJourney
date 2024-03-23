@@ -121,14 +121,16 @@
     "hud": true,
     "hud.redstone": true
   },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
   "pipez": {
     "pipe": true
   },
   "appliedcooking": {
     "kitchen_station": true
-  },
-  "twilightforest": {
-    "quest_ram_wool": true
   },
   "waystones": {
     "waystone": true
@@ -143,9 +145,9 @@
     "milk_jar": true,
     "toaster": true
   },
-  "storagedrawers": {
-    "display.stacklimit": true,
-    "display.content": true,
-    "display.status": true
+  "mysticalagriculture": {
+    "infused_farmland": true,
+    "crop": true,
+    "inferium_crop": true
   }
 }
