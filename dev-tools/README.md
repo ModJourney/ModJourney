@@ -14,6 +14,19 @@ For the build script and working with the versions control you need to install
 - [optional] for a better compare view for the modlist ext. you can copy (or [include]) the
   textconv-settings below into your project-config (in the `PROJECTDIR/.git/config`-file)
 
+```ini
+[diff "sort"]
+	textconv = "sort"
+[diff "modlist-sort"]
+	textconv = "php -r '\
+		$modlist = json_decode(file_get_contents($argv[1]));\
+		usort($modlist->files, function($a, $b) {\
+			return $a->projectID <=> $b->projectID;\
+		});\
+		echo json_encode($modlist, JSON_PRETTY_PRINT);\
+	'"
+```
+
 ## Script
 - [build-client-archive.sh](build-client-archive.sh) - run this script to build the client download archive.
   The script builds the archive from files in the current selected branch, and you find the archive
