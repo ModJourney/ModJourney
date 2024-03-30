@@ -15,6 +15,7 @@ config/alexsmobs/*.json			text eol=lf
 config/bettercombat/*.{json,jsonc}	text eol=lf
 config/betterstrongholds/*		text eol=lf
 config/bhc/*.json			text eol=lf
+config/botanicalmachinery/*		text eol=lf
 config/cataclysm/*			text eol=lf
 config/eldritch_end/*			text eol=lf
 config/extendedcrafting/*		text eol=lf
