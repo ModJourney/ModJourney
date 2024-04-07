@@ -1,5 +1,5 @@
 #If enabled, players automatically attempt to use sleeping bags when placed.
-autoUse = true
+autoUse = false
 #If enabled, players cannot sleep again for a period of time after sleeping.
 restrictSleeping = false
 #If restrictSleeping is true, this value will determine the length of wait time (larger numbers sleep sooner).
@@ -7,7 +7,7 @@ restrictSleeping = false
 restMultiplier = 2.0
 #The time of day that hammocks can be used.
 #Allowed Values: NONE, DAY, NIGHT, DAY_OR_NIGHT
-hammockUse = "DAY"
+hammockUse = "NIGHT"
 #The time of day that sleeping bags can be used.
 #Allowed Values: NONE, DAY, NIGHT, DAY_OR_NIGHT
 sleepingBagUse = "NIGHT"

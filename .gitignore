@@ -5,6 +5,7 @@
 /config/libraryferret_1.properties
 /config/bettervillage_1.properties
 /config/worldedit/worldedit.properties
+/config/luckperms/*
 !/defaultconfigs/
 !/defaultconfigs/*
 !/world/serverconfig/

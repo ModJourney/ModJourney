@@ -1,26 +1,8 @@
-// priority: 10
+// priority: 99
 
 const dirty_dust_mek = ["lead", "osmium", "tin", "uranium"];
-var del_tags_add_remove 
-
-
 
 ServerEvents.tags('item', event => {
-
-    del_tags_add_remove = (rohmaterial, werkstoff) => {
-        let mods_name_1 = ["immersiveengineering", "mekanism"];
-        let mods_name_2 = ["thermal"]
-        mods_name_1.forEach((element) => {
-            event.removeAllTagsFrom(element + ':' + werkstoff + '_' + rohmaterial)
-            event.add('remove:' + element + '_' + rohmaterial, element + ':' + werkstoff + '_' + rohmaterial)
-            event.add('remove:item', element + ':' + werkstoff + '_' + rohmaterial)
-        })
-        mods_name_2.forEach((element) => {
-            event.removeAllTagsFrom(element + ':' + rohmaterial + '_' + werkstoff)
-            event.add('remove:' + element + '_' + rohmaterial, element + ':' + rohmaterial + '_' + werkstoff)
-            event.add('remove:item', element + ':' + rohmaterial + '_' + werkstoff)
-        })
-    };
 
     //dreckiger Staub vereinheitlichen. Meka dirty Dusts raus und auf ATO item angewendet /meka/tag (vorhanden)
     dirty_dust_mek.forEach((tagged) => {
@@ -56,4 +38,12 @@ ServerEvents.tags('item', event => {
         event.add(`remove:industrialforegoing_${gearz}`, `industrialforegoing:${gearz}_gear`)
         event.add('remove:items', `industrialforegoing:${gearz}_gear`)
     })
+
+    //dust umtaggen
+    forge_ores_2.forEach((element) => {
+        del_tags_add_remove( element, 'dust')
+    })
+   
+
+    event.add('thermal:crafting/dies', 'immersiveengineering:mold_gear')
 })
