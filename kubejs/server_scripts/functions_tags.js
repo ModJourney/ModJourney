@@ -1,4 +1,4 @@
-//priority 95
+//priority 100
 
 var del_tags_add_remove 
 

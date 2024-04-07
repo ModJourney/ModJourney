@@ -1,5 +1,5 @@
 // priority: 0
-
+/*
 ServerEvents.recipes(event => {
 
     ato_ores.forEach((replace) => {
@@ -9,5 +9,7 @@ ServerEvents.recipes(event => {
         output_replace(replace,"block")
         output_replace(replace,"plate")
         output_replace(replace,"dust")
+        output_replace(replace,"storage")
     })
 })
+*/

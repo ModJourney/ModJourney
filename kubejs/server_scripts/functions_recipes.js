@@ -88,6 +88,24 @@
         */
         var mekka_crushing
 
+    //immersive_metal_press
+
+        /**
+         * Zum bearbeiten der immersiveengineering Metallpresse. Der Output ist eine Item ID. Der Input als Tag.
+         * bei den Molds ist eine Angabe von 1-8 möglich.
+         * 1 = Rods, 2 = Plates, 3 = Gears, 4 = Wires, 5 = Unpacking, 6 = Bullet_Casing, 7 = Packing 2x2, 8 = Packing 3x3
+         * @example immersive_press("immersiveengineering:wire_constatan, 4, "forge:ingots/constatan, 1, 5, 6800")
+         * @param {String} output - Ein spezifisches Item als Fertiges Produkt wird erwartet. e.g. "alltheores:brass_gear"
+         * @param {Int} var_output - Die Anzahl der Items die erstellt werden. e.g. 1 für ein Zahnrad
+         * @param {String} input - Es wird ein Tag erwartet, was vercraftet werden soll. e.g. "forge:ingots/brass"
+         * @param {Int} var_input - Die Anzahl der Items die es benötigt um zu craften. e.g. 2 
+         * @param {Int} mold - Es wird ein Integar zwischen 1-8 erwartet. Siehe Beschreibung.
+         * @param {Int} energy_cost - Es wird ein Integar erwartet. Die Stromkosten, die es zur Herstellung braucht.
+        */
+        var immersive_press
+
+
+
 ServerEvents.recipes(event => {
 
     // #######################################################################################
@@ -223,7 +241,6 @@ ServerEvents.recipes(event => {
             })
         }
 
-
     // #######################################################################################
        
     //Mekanism Functions
@@ -262,5 +279,49 @@ ServerEvents.recipes(event => {
             })
         }
 
+    // #######################################################################################
+       
+    //immersiveengineering Functions
+
+
+        //immersive_metal_press
+
+        immersive_press = (output, var_output, input, var_input, mold, energy_cost) => {
+            if (mold === 1) {
+                mold = "immersiveengineering:mold_rod";
+            } else if ( item === 2) {
+                mold = "immersiveengineering:mold_plate";
+            } else if (item === 3) {
+                mold = "immersiveengineering:mold_gear";
+            } else if (item === 4) {
+                mold = "immersiveengineering:mold_wire";
+            } else if (item === 5) {
+                mold = "immersiveengineering:mold_unpacking";
+            } else if (item === 6) {
+                mold = "immersiveengineering:mold_bullet_casing";
+            } else if (item === 7) {
+                mold = "immersiveengineering:mold_packing_4";
+            } else if (item === 8) {
+                mold = "immersiveengineering:mold_packing_9";
+            } else {
+                console-log("In der Funktion immersive_press ist ein Fehler aufgetreten.")
+            };
+            event.custom({
+                "type": "immersiveengineering:metal_press",
+                "energy": energy_cost,
+                "input": {
+                    "amount:":var_input,
+                  "tag": input
+                },
+                "mold": mold,
+                "result": {
+                  "base_ingredient": {
+                    "tag": output
+                  },
+                  "count": var_output
+                }
+            })
+        }
+      
 
 })

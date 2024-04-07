@@ -39,7 +39,7 @@ JEIEvents.hideItems(event => {
     event.hide(Item.of('mekanism:creative_chemical_tank')).ignoreNBT()
 
     //keine Veränderung. Dokumentation inkonsistent.
-    event.hide(Item.of('mekanism:creative_fluid_tank')).ignoreNBT()
+    event.hide('mekanism:creative_fluid_tank')
 
 })
 

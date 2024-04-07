@@ -3,4 +3,4 @@
 .editorconfig	export-ignore
 README.md		export-ignore
 dev-tools/		export-ignore
-kubejs-DOKUs/	export-ignore
+kubejs/kubejs-DOKUs/	export-ignore

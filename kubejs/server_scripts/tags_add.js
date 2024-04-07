@@ -1,4 +1,4 @@
-// priority: 100
+// priority: 99
 
 const dirty_dust_mek = ["lead", "osmium", "tin", "uranium"];
 
@@ -38,6 +38,12 @@ ServerEvents.tags('item', event => {
         event.add(`remove:industrialforegoing_${gearz}`, `industrialforegoing:${gearz}_gear`)
         event.add('remove:items', `industrialforegoing:${gearz}_gear`)
     })
+
+    //dust umtaggen
+    forge_ores_2.forEach((element) => {
+        del_tags_add_remove( element, 'dust')
+    })
+   
 
     event.add('thermal:crafting/dies', 'immersiveengineering:mold_gear')
 })

@@ -1,7 +1,7 @@
 
 [general]
 	#Whether all players should get an Animal Dictionary when joining the world for the first time.
-	giveBookOnStartup = true
+	giveBookOnStartup = false
 	#Lava Opacity for the Lava Vision Potion.
 	#Range: 0.01 ~ 1.0
 	lavaVisionOpacity = 0.65
@@ -27,7 +27,7 @@
 	#Whether bone serpents are neutral or hostile.
 	neutralBoneSerpents = false
 	#Whether mimicubes spawns should be restricted solely to the end city structure or to whatever biome is specified in their respective biome config.
-	mimicubeSpawnInEndCity = true
+	mimicubeSpawnInEndCity = false
 	#Whether mimicream can be used to duplicate items.
 	mimicreamRepair = true
 	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
@@ -85,10 +85,10 @@
 	voidWormSpawnDimensions = ["minecraft:the_end"]
 	#All void worm damage is scaled to this.
 	#Range: 0.0 ~ 100.0
-	voidWormDamageModifier = 1.0
+	voidWormDamageModifier = 75.0
 	#Max Health of the void worm boss.
 	#Range: 0.0 ~ 1000000.0
-	voidWormMaxHealth = 160.0
+	voidWormMaxHealth = 45000.0
 	#Whether the void worm boss is summonable or not, via the mysterious worm item.
 	voidWormSummonable = true
 	#Whether seagulls should steal food out of players' hotbar slots.
@@ -115,7 +115,7 @@
 	transmutingTableExplodes = true
 	#The experience, in levels, that each transmutation of a stack takes in the transmuting table.
 	#Range: 0 ~ 100000
-	transmutingExperienceCost = 3
+	transmutingExperienceCost = 120
 	#The step value multiplied by the log of the stack size when transmuting an item, used to determine its weight for appearing in future transmutation possibilities. Higher number = more likely to appear.
 	#Range: 1.0 ~ 10000.0
 	transmutingWeightAddStep = 3.0
