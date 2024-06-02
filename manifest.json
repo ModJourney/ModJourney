@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "DyTech 4 - dev",
-  "version": "0.3.1",
+  "version": "0.3.2-a hotfix",
   "author": "",
   "files": [
     {
@@ -1032,6 +1032,16 @@
     {
       "projectID": 411045,
       "fileID": 4578649,
+      "required": true
+    },
+    {
+      "projectID": 892005,
+      "fileID": 5386563,
+      "required": true
+    },
+    {
+      "projectID": 957920,
+      "fileID": 5226922,
       "required": true
     }
   ],
