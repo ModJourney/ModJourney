@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "4F7B7A25B169DF0C", title: "Stage 1" }
+		{ id: "2B56DB663EC0624D", title: "Stage 2" }
+		{ id: "4509814A0551B973", title: "Stage 3" }
+		{ id: "2930EF965933F522", title: "Stage 4" }
+		{ id: "1EBBE37570FABB13", title: "Stage 5" }
+		{ id: "38963E2C78DA144E", title: "Technik" }
+		{ id: "748BABC3A371D709", title: "Magic" }
+		{ id: "01BB617B7A994E9C", title: "Adventure" }
+	]
+}

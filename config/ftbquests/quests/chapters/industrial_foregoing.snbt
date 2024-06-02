@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing"
+	group: "38963E2C78DA144E"
+	id: "642CAF597533E4B6"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Industrial Foregoing"
+}
