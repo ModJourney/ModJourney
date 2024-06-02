@@ -33,13 +33,12 @@ JEIEvents.hideItems(event => {
 
     other_oreToRemove.forEach((atm_ore) => {
         event.hide(`alltheores:other_${atm_ore}_ore`)
-        event.hide(Item.of('ae2:facade', "{item:\"alltheores:other_" + atm_ore + "_ore\"}"))
+        event.hide(
+            Item.of('ae2:facade', "{item:\"alltheores:other_" + atm_ore + "_ore\"}"
+        ))
     })
 
     event.hide(Item.of('mekanism:creative_chemical_tank')).ignoreNBT()
-
-    //keine Veränderung. Dokumentation inkonsistent.
-    event.hide('mekanism:creative_fluid_tank')
-
+    
 })
 
