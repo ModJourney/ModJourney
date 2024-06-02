@@ -1,9 +1,5 @@
 // priority: 5
 
-//https://kubejs.com/wiki/addons/built-in/jei
-
-// priority: 0
-
 JEIEvents.hideItems(event => {
 
   //Mob_Grinding_Utils
@@ -17,4 +13,37 @@ JEIEvents.hideItems(event => {
   event.hide('mob_grinding_utils:nutritious_chicken_feed') 
   event.hide('mob_grinding_utils:gm_chicken_feed_cursed')
   event.hide('mob_grinding_utils:dark_oak_stone')
+
+
+
+  const other_oreToRemove = [
+    "aluminum",
+    "lead",
+    "nickel",
+    "osmium",
+    "platinum",
+    "silver",
+    "tin",
+    "uranium",
+    "zinc",
+    "iridium",
+    "coal",
+    "copper",
+    "emerald",
+    "iron",
+    "gold",
+    "quartz",
+    "redstone",
+    "diamond",
+    "lapis",
+  ]
+
+  other_oreToRemove.forEach((atm_ore) => {
+      event.hide(`alltheores:other_${atm_ore}_ore`)
+      event.hide(Item.of('ae2:facade', "{item:\"alltheores:other_" + atm_ore + "_ore\"}"
+    ))
+  })
+
+  event.hide(Item.of('mekanism:creative_chemical_tank')).ignoreNBT()
+      
 })
