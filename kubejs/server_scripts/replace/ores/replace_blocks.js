@@ -1,5 +1,5 @@
 // priority: 0
-
+/*
 ServerEvents.recipes(event => {
     let ato_ores_copy = ato_ores
 
@@ -13,3 +13,4 @@ ServerEvents.recipes(event => {
     immersive_press("alltheores:")
 
 })
+*/

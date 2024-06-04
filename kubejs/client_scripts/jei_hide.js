@@ -3,19 +3,85 @@
 JEIEvents.hideItems(event => {
 
   //Mob_Grinding_Utils
-  event.hide('mob_grinding_utils:mob_swab_used')
-  event.hide('mob_grinding_utils:ender_inhibitor_off')
-  event.hide('mob_grinding_utils:dreadful_dirt')
-  event.hide('mob_grinding_utils:delightful_dirt')
-  event.hide('mob_grinding_utils:rotten_egg')
-  event.hide('mob_grinding_utils:golden_egg')
-  event.hide(Item.of('mob_grinding_utils:monocle', '{Damage:0}'))
-  event.hide('mob_grinding_utils:nutritious_chicken_feed') 
-  event.hide('mob_grinding_utils:gm_chicken_feed_cursed')
-  event.hide('mob_grinding_utils:dark_oak_stone')
+  const mob_grinding = [
+    'mob_swab_used',
+    'ender_inhibitor_off',
+    'dreadful_dirt',
+    'delightful_dirt',
+    'rotten_egg',
+    'golden_egg',
+    'monocle',
+    'nutritious_chicken_feed',
+    'gm_chicken_feed_cursed',
+    'dark_oak_stone',
+  ]
+
+  mob_grinding.forEach((element) => {
+    event.hide(Item.of('mob_grinding_utils:' + element).ignoreNBT())
+  });
+  
+
+  //Structure_gel API Build Mod
+  const structure_api = [
+    'dynamic_spawner',
+    'red_gel',
+    'blue_gel',
+    'green_gel',
+    'cyan_gel',
+    'orange_gel',
+    'building_tool',
+    'yellow_gel',
+    'data_handler'
+  ]
+
+  structure_api.forEach((element) => {
+    event.hide(Item.of('structure_gel:' + element).ignoreNBT())
+  });
 
 
+  //RFT Tools
+  const remove = [
+    'advanced_charged_porter',
+    'charged_porter',
+    'teleport_probe',
+    'creative_screen',
+    'matter_booster',
+    'tank',
+    'matter_beamer',
+    'flight_module',
+    'luck_module',
+    'peaceful_module',
+    'spawner',
+    'destination_analyzer',
+    'dialing_device',
+    'matter_receiver',
+    'matter_transmitter',
+    'syringe'
+  ]
 
+  remove.forEach((element) => {
+    event.hide (Item.of('rftoolsutility:' + element).ignoreNBT())
+  });
+  
+  //Industrial Foregoing
+  const infinty_hide = [
+    'saw',
+    'hammer',
+    'trident',
+    'backpack',
+    'launcher',
+    'nuke',
+    'infinity_drill'
+  ]
+
+  infinty_hide.forEach((element) => {
+    event.hide (
+      Item.of('industrialforegoing:infinity_' + element).ignoreNBT()
+    )
+  });
+
+
+  //alltheores - Other Ores werden removed
   const other_oreToRemove = [
     "aluminum",
     "lead",

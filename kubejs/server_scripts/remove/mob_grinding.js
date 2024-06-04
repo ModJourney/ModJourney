@@ -1,7 +1,8 @@
 //priority 0
 
 ServerEvents.recipes(event => {
-
+    
+    //entfernt das Hühnerfutter zum erstellen von Erde welche Mobs oder Tiere spwawnt.
     let mob_grinding = [
         'mob_grinding_utils:nutritious_chicken_feed', 
         'mob_grinding_utils:gm_chicken_feed_cursed'
