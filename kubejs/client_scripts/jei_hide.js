@@ -1,7 +1,11 @@
 // priority: 5
 
 JEIEvents.hideItems(event => {
+  
+  //immersive
+  event.hide('immersiveengineering:cloche')
 
+  
   //Mob_Grinding_Utils
   const mob_grinding = [
     'mob_swab_used',
