@@ -116,7 +116,7 @@
 	#Range: 0 ~ 1000000
 	EnderGuardianDamageCap = 22
 	#Ender guardian's block breaking ignore the MobGriefing
-	EnderguardianBlockBreaking = true
+	EnderguardianBlockBreaking = false
 	#Guardian's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Guardian's prevent attacks from far away Range" = 12.0
@@ -206,7 +206,7 @@
 	#Range: 0 ~ 1000000
 	IgnisDamageCap = 20
 	#Ignis's cracked block breaking ignore the MobGriefing
-	IgnisBlockBreaking = true
+	IgnisBlockBreaking = false
 
 [revenant]
 	#Revenant's Health Multiplier
@@ -278,7 +278,7 @@
 	#Range: 0 ~ 1000000
 	LeviathanDamageCap = 20
 	#Leviathan's block breaking ignore the MobGriefing
-	LeviathanBlockBreaking = true
+	LeviathanBlockBreaking = false
 	#Leviathan Immune Out of Water
 	LeviathanImmuneOutofWater = true
 
@@ -320,7 +320,7 @@
 	#Range: 0 ~ 1000000
 	AncientRemnantCap = 21
 	#Ancient Remnant's block breaking ignore the MobGriefing
-	AncientRemnantBlockBreaking = true
+	AncientRemnantBlockBreaking = false
 	#Remnant's Charge Hp Damage
 	#Range: 0.0 ~ 1.0
 	"Remnant's Charge Hp Damage" = 0.07
