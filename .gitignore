@@ -6,10 +6,31 @@
 /config/bettervillage_1.properties
 /config/worldedit/worldedit.properties
 /config/luckperms/*
-!/defaultconfigs/
-!/defaultconfigs/*
-!/world/serverconfig/
-!/world/serverconfig/*
+!/world/
+/world/advancements/
+/world/data
+/world/DIM*
+/world/dimensions
+/world/entities
+/world/ftb*
+/world/playerdata
+/world/poi
+/world/region
+/world/serverconfig
+/world/stats
+/world/kubejs_persistent_data.nbt
+/world/level.*
+/world/session.lock
+/world/xaeromap.txt
+
+
+
+
+#!/defaultconfigs/
+#!/defaultconfigs/*
+#!/world/datapacks/
+#!/world/serverconfig/
+#!/world/serverconfig/*
 
 # Dont ignore git meta-files
 !/.gitignore

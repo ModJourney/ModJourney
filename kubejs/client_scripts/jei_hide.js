@@ -1,7 +1,37 @@
 // priority: 5
 
 JEIEvents.hideItems(event => {
+
+  //botania lenses removen
+
+  const lens = [
+    'botania:lens_explosive',
+    'botania:lens_piston',
+    'botania:lens_weight',
+    'botania:lens_mine'
+  ]
   
+  lens.forEach(element => {
+    event.hide(element)
+  });
+
+
+  //botania Staebe removen
+
+  let rods = [
+    'botania:terraform_rod',
+    'botania:exchange_rod',
+    'botania:water_rod'
+  ]
+
+  rods.forEach(element => {
+    event.hide(element)
+  });
+
+  //botania Laputa Shard removen
+  event.hide('botania:laputa_shard')
+  
+
   //immersive
   event.hide('immersiveengineering:cloche')
 
@@ -75,7 +105,8 @@ JEIEvents.hideItems(event => {
     'backpack',
     'launcher',
     'nuke',
-    'infinity_drill'
+    'infinity_drill',
+    'drill'
   ]
 
   infinty_hide.forEach((element) => {
@@ -115,5 +146,4 @@ JEIEvents.hideItems(event => {
   })
 
   event.hide(Item.of('mekanism:creative_chemical_tank')).ignoreNBT()
-      
 })
