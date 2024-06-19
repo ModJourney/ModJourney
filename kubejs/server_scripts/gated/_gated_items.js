@@ -25,3 +25,5 @@ const stages = {
         magic: ''
     }
 }
+
+/* Zugriff auf das Objekt mittels "stages.stage1.core" order stages.stage3.magic*/
