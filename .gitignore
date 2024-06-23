@@ -6,6 +6,7 @@
 /config/bettervillage_1.properties
 /config/worldedit/worldedit.properties
 /config/luckperms/*
+/config/spark/*
 !/world/
 /world/advancements/
 /world/data
