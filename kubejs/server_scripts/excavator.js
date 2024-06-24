@@ -9,6 +9,18 @@
 */
 
 ServerEvents.tags('item', event => {
+  let other_oreToUntag = [
+  'aluminum', 
+  'lead', 
+  'nickel', 
+  'osmium', 
+  'platinum', 
+  'silver', 
+  'tin', 
+  'uranium', 
+  'zinc', 
+  'iridium'
+  ]
 
   other_oreToUntag.forEach((other) => {
       event.removeAllTagsFrom(`alltheores:other_${other}_ore`)
