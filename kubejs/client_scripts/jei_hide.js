@@ -33,9 +33,23 @@ JEIEvents.hideItems(event => {
 
 
   // Mystical Agriculture
-  const mystical_hide = [
+  let mystical_hide = [
     'mysticalagriculture:harvester'
   ]
+
+  // remove all growth accelerators (but keep the first)
+  let mystical_tiers = [
+    // inferium,
+    'prudentium',
+    'tertium',
+    'imperium',
+    'supremium'
+  ];
+
+  // Add accelerators to remove list
+  mystical_tiers.forEach(tier => {
+    mystical_hide.push(Item.of(`mysticalagriculture:${tier}_growth_accelerator`))
+  })
 
   mystical_hide.forEach((element) => {
     event.hide(element)
