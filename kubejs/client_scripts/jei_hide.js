@@ -10,7 +10,7 @@ JEIEvents.hideItems(event => {
     'botania:lens_weight',
     'botania:lens_mine'
   ]
-  
+
   lens.forEach(element => {
     event.hide(element)
   });
@@ -30,12 +30,22 @@ JEIEvents.hideItems(event => {
 
   //botania Laputa Shard removen
   event.hide('botania:laputa_shard')
-  
+
+
+  // Mystical Agriculture
+  const mystical_hide = [
+    'mysticalagriculture:harvester'
+  ]
+
+  mystical_hide.forEach((element) => {
+    event.hide(element)
+  })
+
 
   //immersive
   event.hide('immersiveengineering:cloche')
 
-  
+
   //Mob_Grinding_Utils
   const mob_grinding = [
     'mob_swab_used',
@@ -53,7 +63,7 @@ JEIEvents.hideItems(event => {
   mob_grinding.forEach((element) => {
     event.hide(Item.of('mob_grinding_utils:' + element).ignoreNBT())
   });
-  
+
 
   //Structure_gel API Build Mod
   const structure_api = [
@@ -96,7 +106,7 @@ JEIEvents.hideItems(event => {
   remove.forEach((element) => {
     event.hide (Item.of('rftoolsutility:' + element).ignoreNBT())
   });
-  
+
   //Industrial Foregoing
   const infinty_hide = [
     'saw',
