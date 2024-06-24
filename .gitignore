@@ -54,10 +54,14 @@
 /config/luckperms/translations/
 /config/luckperms/libs/
 
+
 # Ignore files containing user specific config
 /config/spark/activity.json
 /config/voicechat/username-cache.json
 /config/ItemLocks/nodes/SP/
 /config/jei/world/local/
 /config/worldedit/sessions/
-
+/config/bettercombat/
+config/worldedit/worldedit.properties
+config/worldedit/worldedit.properties
+config/spark/activity.json
