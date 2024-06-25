@@ -11,6 +11,6 @@ ServerEvents.recipes(event => {
         'drill'
     ]
     infinity_stuff.forEach(element => {
-        event.remove({ output: Item.of('industrialforegoing:infinity_' + element).ignoreNBT() })
+        event.remove({ output: Item.of('industrialforegoing:infinity_' + element)})
     });
 })
