@@ -1,9 +1,9 @@
 // priority: 100
 
-// In diesem Skript werden alle Ausagen von Mekanism Enriching, Crushing und Minecraft Crafting, Blasting auf alltheores umgestellt. 
+// In diesem Skript werden alle Ausagen von Mekanism Enriching, Crushing und Minecraft Crafting, Blasting auf alltheores umgestellt.
 // Dies konsolidiert folgende Werksmaterialien: Raw_Ore,Storage_blocks, Raw_storage_Blocks, Dust, Nugget, Ingot
 
-//WICHTIG 
+//WICHTIG
 // Zum aktuellen Stand fehlt noch Thermal: Induktionsschmelze, Packer, RedstoneOfen
 ServerEvents.recipes(event => {
 
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
                 let json = r.json;
                 let output = r.json.get("output")
                 output.add("item", 'alltheores:' + element + '_' + werkstoff)
-        
+
                 event.custom(r.json).id(r.getId())
             })
         });
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
                 let json = r.json;
                 let output = r.json.get("output")
                 output.add("item", 'alltheores:' + element + '_' + werkstoff)
-        
+
                 event.custom(r.json).id(r.getId())
             })
         });
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
                 let output = r.json
                 output.add("result", 'alltheores:' + element + '_' + werkstoff_output.slice(0, -1))
                 event.custom(r.json).id(r.getId())
-            }) 
+            })
         });
     }
 
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
                 let output = r.json.get("result")
                 output.add("item", 'alltheores:' + element + '_' + werkstoff_output.slice(X, Y))
                 event.custom(r.json).id(r.getId())
-            }) 
+            })
         });
     }
 
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
                 let output = r.json.get("result")
                 output.add("item", 'alltheores:' + werkstoff_output.slice(X, Y) + '_' + element )
                 event.custom(r.json).id(r.getId())
-            }) 
+            })
         });
     }
 
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
                 let output = r.json.get("result")
                 output.add("item", 'alltheores:' + werkstoff_output.slice(X, Y) + '_' + element + '_block')
                 event.custom(r.json).id(r.getId())
-            }) 
+            })
         });
     }
 
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
     mc_craftingtable('ingots',0,-1)                         //Crafting zu Ingots im Craftingfeld
     mc_craftingtable('nuggets',0,-1)                        //Crafting zu Nuggets im Craftingfeld
     mc_craftingtable2('raw_materials',0,-10)                //Unsematische IDs desswegen die 2
-    mc_craftingtable3('storage_blocks/raw_',15,-1)          //Unsematische IDs desswegen die 3     
+    mc_craftingtable3('storage_blocks/raw_',15,-1)          //Unsematische IDs desswegen die 3
 })
 
 
@@ -97,11 +97,11 @@ ServerEvents.recipes(event => {
         Hier ist die Basisfunktion. Zur Erklärung:
         Es wird direkt an den Eventhandler angeknüpft und die Rezepte vom Typ crushing mit der Ausgabe Bleistaub werden z.B. an die variable "r" übergeben.
         Dieses Rezept was nun als rohe JSON vorliegt, kann nun weiterverarbeitet werden. so wird der output in dem Beispiel überschrieben. Zuweil wird
-        ein neues custom Event angelegt und die json wird wieder reingeladen. Mittels der id wird das ursprungsrezept mit r.getId wieder zugeteilt. 
-        Vor diese Funktion ist ein array mit einer schleife gekoppelt, welche alle Erze enthält, welche in ATO vorkommen. 
+        ein neues custom Event angelegt und die json wird wieder reingeladen. Mittels der id wird das ursprungsrezept mit r.getId wieder zugeteilt.
+        Vor diese Funktion ist ein array mit einer schleife gekoppelt, welche alle Erze enthält, welche in ATO vorkommen.
         So kann man gewährleisten, dass wenn man dieses erz mit übergibt und als Filter angibt, nur Rezepte zu erstellen, welche auch im Sucharray vorkommen!
 
-    
+
             event.forEachRecipe({type: 'mekanism:crushing', output: 'mekanism:dust_lead'}, r => {
                 let json = r.json;
                 let output = r.json.get("output")
