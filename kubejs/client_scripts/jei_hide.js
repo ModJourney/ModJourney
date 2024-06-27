@@ -2,6 +2,30 @@
 
 JEIEvents.hideItems(event => {
 
+  //thermal series tnt removen
+
+  const tnt = [
+    'thermal:detonator',
+    'thermal:explosive_grenade',
+    'thermal:fire_tnt',
+    'thermal:ice_tnt',
+    'thermal:lightning_tnt',
+    'thermal:earth_tnt',
+    'thermal:ender_tnt',
+    'thermal:glowstone_tnt',
+    'thermal:redstone_tnt',
+    'thermal:slime_tnt',
+    'thermal:phyto_tnt',
+    'thermal:nuke_tnt'
+    ]
+    
+    tnt.forEach(element => {
+      event.hide(element)
+    });
+  
+  //thermal series hide florb
+  event.hide('thermal:florb')
+  
   //botania lenses removen
 
   const lens = [
