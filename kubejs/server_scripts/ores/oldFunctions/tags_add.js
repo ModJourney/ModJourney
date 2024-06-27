@@ -1,5 +1,5 @@
 // priority: 99
-
+/*
 const dirty_dust_mek = ["lead", "osmium", "tin", "uranium"];
 
 ServerEvents.tags('item', event => {
@@ -47,3 +47,4 @@ ServerEvents.tags('item', event => {
 
     event.add('thermal:crafting/dies', 'immersiveengineering:mold_gear')
 })
+*/

@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
 
     let remove = [
-        Item.of('rftoolsutility:advanced_charged_porter').ignoreNBT(),
-        Item.of('rftoolsutility:charged_porter').ignoreNBT(),
+        Item.of('rftoolsutility:advanced_charged_porter'),
+        Item.of('rftoolsutility:charged_porter'),
         'rftoolsutility:matter_booster',
         'rftoolsutility:tank',
         'rftoolsutility:matter_beamer',
