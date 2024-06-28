@@ -1,0 +1,72 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "das_wird_nie_ein_spieler_sehen"
+	group: "524CDEDD30F391D1"
+	icon: "minecraft:birch_trapdoor"
+	id: "26213DD4A69A0CB9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Wenn Du das siehst hast Du gecheatet "
+				"{image:minecraft:textures/trims/models/armor/wayfinder.png width:100 height:100 align:1}"
+				"Schande...."
+			]
+			id: "184CB42708564869"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7FDEAAE1C3D9F5B3"
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "71978C5F0FEB8911"
+					title: "Wenn Du das siehst...."
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:player"
+					id: "2C033BDD02ED7937"
+					type: "kill"
+					value: 100L
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "2ACEB5035380AECF"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "226CBDEC852FED60"
+				type: "dimension"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			id: "0A683B1AC8C379B7"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "2AB3E82C6C8723C6"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "4FB920A941F52CF2"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "612B7D319C603F06"
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+	]
+	title: "Das wird nie ein Spieler sehen"
+}
