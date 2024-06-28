@@ -73,6 +73,14 @@
 				elevate_perms: true
 				id: "5B9C26B64360F6DE"
 				ignore_reward_blocking: true
+				silent: true
+				type: "command"
+			}]
+			rewards: [{
+				command: "/execute as @s in minecraft:the_nether run locate structure minecraft:bastion_remnant"
+				elevate_perms: true
+				id: "5B9C26B64360F6DE"
+				ignore_reward_blocking: true
 				type: "command"
 			}]
 			tasks: [{
