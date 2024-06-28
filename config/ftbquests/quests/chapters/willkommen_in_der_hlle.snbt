@@ -68,10 +68,16 @@
 			icon: "kubejs:quest_1"
 			id: "2EB49551880DE2AB"
 			min_required_dependencies: 2
+			rewards: [{
+				command: "/execute as @s in minecraft:the_nether run locate structure minecraft:bastion_remnant"
+				elevate_perms: true
+				id: "5B9C26B64360F6DE"
+				ignore_reward_blocking: true
+				type: "command"
+			}]
 			tasks: [{
-				consume_items: true
 				count: 20L
-				id: "42E4DFBB9B4194A4"
+				id: "2F463C8C9AB9C6C4"
 				item: "minecraft:rotten_flesh"
 				type: "item"
 			}]
@@ -84,11 +90,6 @@
 			description: ["Wunderbar, unsere Forscher haben das bekommen was sie wollten, nun halten Sie ihr versprechen und sagen uns zu, dass Sie eine Struktur für uns lokalisieren werden. "]
 			hide: true
 			id: "5398CB650B9E0EE8"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2003EDA4B0A765F7"
-				type: "choice"
-			}]
 			tasks: [{
 				id: "0DE16E8769B42835"
 				title: "Forscher hocherfreut!"
@@ -511,7 +512,7 @@
 				"44A3F90B1D2ED1D2"
 				"0D406099F1605656"
 			]
-			icon: "kubejs:rolle_nether_1"
+			icon: "minecraft:end_stone"
 			id: "4B0174A4CCA76071"
 			tasks: [{
 				id: "619C869FBF0B2CD0"

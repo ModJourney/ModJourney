@@ -10,34 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"Wenn Du das siehst hast Du gecheatet "
-				"{image:minecraft:textures/trims/models/armor/wayfinder.png width:100 height:100 align:1}"
-				"Schande...."
-			]
-			id: "184CB42708564869"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7FDEAAE1C3D9F5B3"
-				type: "choice"
-			}]
-			tasks: [
-				{
-					id: "71978C5F0FEB8911"
-					title: "Wenn Du das siehst...."
-					type: "checkmark"
-				}
-				{
-					entity: "minecraft:player"
-					id: "2C033BDD02ED7937"
-					type: "kill"
-					value: 100L
-				}
-			]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			id: "2ACEB5035380AECF"
 			tasks: [{
 				dimension: "minecraft:the_nether"

@@ -69,58 +69,6 @@
 			x: 0.0d
 			y: 1.5d
 		}
-		{
-			icon: {
-				Count: 1b
-				id: "minecraft:wooden_pickaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2C977D3F16A1D8FD"
-			tasks: [{
-				id: "4C0303AEA290BBCB"
-				item: {
-					Count: 1b
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:wooden_sword"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:wooden_axe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:wooden_pickaxe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:wooden_shovel"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
-		}
 	]
 	title: "Die Steinzeit"
 }
