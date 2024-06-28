@@ -513,33 +513,26 @@
 			]
 			icon: "kubejs:rolle_nether_1"
 			id: "4B0174A4CCA76071"
-			tasks: [
-				{
-					id: "619C869FBF0B2CD0"
-					item: {
-						Count: 1b
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "kubejs:quest_2"
-								}
-								{
-									Count: 1b
-									id: "kubejs:quest_1"
-								}
-							]
-						}
+			tasks: [{
+				id: "619C869FBF0B2CD0"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:quest_2"
+							}
+							{
+								Count: 1b
+								id: "kubejs:quest_1"
+							}
+						]
 					}
-					type: "item"
 				}
-				{
-					id: "14F576E9DDA42D7C"
-					item: "kubejs:quest_1"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Die Reise geht weiter"
 			x: 0.0d
 			y: 7.0d
