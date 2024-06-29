@@ -2,7 +2,7 @@
 	icon: "mysticalagriculture:tertium_essence"
 	id: "24F63EB4DD5227DC"
 	loot_size: 1
-	order_index: 2
+	order_index: 3
 	rewards: [
 		{ item: "mysticalagriculture:iron_seeds" }
 		{ item: "mysticalagriculture:copper_seeds" }

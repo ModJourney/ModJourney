@@ -2,7 +2,7 @@
 	icon: "mysticalagriculture:supremium_essence"
 	id: "3E1ECF76C9475F78"
 	loot_size: 1
-	order_index: 4
+	order_index: 5
 	rewards: [
 		{ item: "mysticalagriculture:end_steel_seeds" }
 		{ item: "mysticalagriculture:diamond_seeds" }

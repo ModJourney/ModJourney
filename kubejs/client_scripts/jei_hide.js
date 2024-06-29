@@ -99,7 +99,7 @@ JEIEvents.hideItems(event => {
     ]
 
     mob_grinding.forEach((element) => {
-        event.hide(Item.of('mob_grinding_utils:' + element).ignoreNBT())
+        event.hide(Item.of('mob_grinding_utils:' + element))
     });
 
 
@@ -117,7 +117,7 @@ JEIEvents.hideItems(event => {
     ]
 
     structure_api.forEach((element) => {
-        event.hide(Item.of('structure_gel:' + element).ignoreNBT())
+        event.hide(Item.of('structure_gel:' + element))
     });
 
 
@@ -142,7 +142,7 @@ JEIEvents.hideItems(event => {
     ]
 
     remove.forEach((element) => {
-        event.hide(Item.of('rftoolsutility:' + element).ignoreNBT())
+        event.hide(Item.of('rftoolsutility:' + element))
     });
 
     //Industrial Foregoing
@@ -159,7 +159,7 @@ JEIEvents.hideItems(event => {
 
     infinty_hide.forEach((element) => {
         event.hide(
-            Item.of('industrialforegoing:infinity_' + element).ignoreNBT()
+            Item.of('industrialforegoing:infinity_' + element)
         )
     });
 
@@ -193,5 +193,5 @@ JEIEvents.hideItems(event => {
         ))
     })
 
-    event.hide(Item.of('mekanism:creative_chemical_tank')).ignoreNBT()
+    event.hide(Item.of('mekanism:creative_chemical_tank'))
 })
