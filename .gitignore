@@ -27,8 +27,8 @@
 
 
 
-#!/defaultconfigs/
-#!/defaultconfigs/*
+!/defaultconfigs/
+!/defaultconfigs/*
 #!/world/datapacks/
 #!/world/serverconfig/
 #!/world/serverconfig/*
