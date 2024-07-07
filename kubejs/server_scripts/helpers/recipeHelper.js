@@ -47,11 +47,41 @@ RecipeHelper.prototype = {
 
 
     /**
-     * My Info text
+     * Replaces input-item by its position in the recipe pattern
+     *
+     * @param {Object} filter The filter to find the recipe to replace
+     *        e.g. {output: 'minecraft:coal'}
+     * @param {int} xPos X-Position to replace in the recipe pattern (starting at 0)
+     * @param {int} yPos Y-Position to replace in the recipe pattern (starting at 0)
+     * @param {Object} newIngredient the item that should be inserted as replace
+     *        TODO Add option to pass this as string (e.g. '#wood' => {tag: 'wood}, 'minecraft:wood' => {item: minecraft:wood} ect.)
+     *
+     *
+     * @see https://wiki.latvian.dev/books/kubejs/page/recipes#bkmrk-removing-recipes
      */
-    doSomething: function () {
-        console.log('Do Something function')
-        console.log(this.event)
+    replaceInputByPosition: function (filter, xPos, yPos, newIngredient) {
+
+        this.event.forEachRecipe(filter, r => {
+            //console.log(r.json)
+
+            // TODO check which key-letters are unused in this recipe (find a un-used key)
+            const patternKey = '1';
+
+            const patternString = r.json.get('pattern').get(yPos);
+            // use '' + to trigger convert from Java.lang.String to a native JS String, and build an array from this
+            let patternArr = Array.from('' + patternString.getAsString());
+            patternArr[ xPos ] = patternKey
+
+
+            // Combine replaced pattern to a string and set it as new recipe pattern
+            r.json.get('pattern').set(yPos, patternArr.join(''));
+
+            // Add new Ingredient
+            // TODO check if ingredient is already listed with an patternKey in this recipe
+            // TODO remove un-used pattern keys from the removed item (it it does not exist else where in the recipe
+            r.json.get('key').add(patternKey, newIngredient)
+            //console.log(r.json)
+        })
     }
 }
 
