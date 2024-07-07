@@ -10,9 +10,9 @@
 /**
  * @var {RecipeHelper}
  */
-let replacer;
+const replacer= new RecipeHelper(null);
 ServerEvents.recipes(event => {
-    replacer = new RecipeHelper(event)
+    replacer.init(event)
 
     replacer.doSomething();
 })
