@@ -11,16 +11,24 @@ ServerEvents.recipes(event => {
     )
 
     // EnderTank
-    event.replaceInput(
+    event.forEachRecipe(
         { id: 'endertanks:tank' },
-        '#forge:rods/blaze',
-        stages.stage1.core
+        r => {
+            // Replace `#' what stands for '#forge:rods/blaze'
+            r.json.get('key').add('#', { item: stages.stage1.core} )
+            // Add changed recipe as custom (because changes in json are NOT back-linked to the recipe-object)
+            event.custom(r.json).id(r.getId())
+        }
     )
 
     // EnderBucket
-    event.replaceInput(
+    event.forEachRecipe(
         { id: 'endertanks:bucket' },
-        'minecraft:blaze_powder',
-        stages.stage1.core
+        r => {
+            // Replace `#' what stands for 'minecraft:blaze_powder'
+            r.json.get('key').add('#', { item: stages.stage1.core} )
+            // Add changed recipe as custom (because changes in json are NOT back-linked to the recipe-object)
+            event.custom(r.json).id(r.getId())
+        }
     )
 })
