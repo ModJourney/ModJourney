@@ -4,6 +4,21 @@
 		power: 1
 		condition: "always_active"
 	}
+	# this rank is given after the first week
+	weekling: {
+		name: "Weekling"
+		power: 2
+	}
+	# this rank is given after the second week
+	double-weekling: {
+		name: "Double Weekling"
+		power: 3
+	}
+	# this rank is given after the third week
+	triple-weekling: {
+		name: "Trible Weekling"
+		power: 3
+	}
 	vip: {
 		name: "VIP"
 		power: 50
