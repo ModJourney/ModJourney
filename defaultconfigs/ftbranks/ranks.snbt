@@ -3,11 +3,13 @@
 		name: "Member"
 		power: 1
 		condition: "always_active"
+		command.spawnpoint: false
 	}
 	# this rank is given after the first week
 	weekling: {
 		name: "Weekling"
 		power: 2
+		command.spawn: true
 	}
 	# this rank is given after the second week
 	double-weekling: {
@@ -29,5 +31,6 @@
 		power: 1000
 		condition: "op"
 		ftbranks.name_format: "&2{name}"
+		command.spawn: true
 	}
 }
