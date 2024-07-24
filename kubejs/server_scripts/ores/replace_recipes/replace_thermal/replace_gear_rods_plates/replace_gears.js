@@ -26,7 +26,6 @@ ServerEvents.recipes(event => {
         event.forEachRecipe({id: "thermal:machines/press/press_" + gear + "_ingot_to_gear"},r => {
             r.json.get("result").get(0).add("item", "alltheores:" + gear + "_gear")
             event.custom(r.json).id(r.getId())
-            console.log(r.json)
         })
     });
 
