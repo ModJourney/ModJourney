@@ -26,6 +26,9 @@ ServerEvents.recipes(event => {
         event.replaceOutput({ output: "thermal:" + ore  + "_block"}, "thermal:" + ore + "_block", "alltheores:" + ore + "_block" );
     });
 
+
+    event.replaceOutput({ output: "thermal:copper_nugget" }, "thermal:copper_nugget", "alltheores:copper_nugget" );
+
 })
 
     //Laserdrill needs extra handler.

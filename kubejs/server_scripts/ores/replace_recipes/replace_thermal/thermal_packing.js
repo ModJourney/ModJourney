@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         'constantan',
         'signalum',
         'lumium',
-        'enderium'
+        'enderium',
     ]
 
     thermal_ores.forEach(ore => {
