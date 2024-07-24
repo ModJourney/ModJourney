@@ -1,78 +1,66 @@
 //priority 50
 
-//This Script replace Alloy_Dust recipes from the thermal centrifuge
+//This Script replace Dust recipes from the thermal pulverizer.
 
 ServerEvents.recipes(event => {
 
-    let thermal_alloy= [
+    let thermal_ores = [
+        'tin',
+        'lead',
+        'silver',
+        'nickel',
         'bronze',
         'electrum',
+        'invar',
         'constantan',
-        'invar'
+        'signalum',
+        'lumium',
+        'enderium',
+        'gold',
+        'iron',
+        'copper',
     ]
 
-    thermal_alloy.forEach( ore => {
-        event.forEachRecipe({id: "thermal:machines/centrifuge/centrifuge_" + ore + "_dust"}, r => {
+        //replace ingots in the multiservo
+    thermal_ores.forEach(ore => {
 
-            let thermal_ores = [
-                'tin',
-                'lead',
-                'silver',
-                'nickel',
-                'bronze',
-                'electrum',
-                'invar',
-                'constantan',
-                'signalum',
-                'lumium',
-                'enderium',
-                'iron',
-                'gold',
-                'copper'
-            ]
+        event.forEachRecipe({ type: "thermal:smelter" }, r => {
 
-            thermal_ores.forEach(ores => {
-                //ermitteln der Anzahl an Objekten in der Ausgabe.
-                let array_size = r.json.get("result").size()
-                //Zaehler fuer die get Befehle und dem Array Check.
-                let counter = 0
-                //Suchbegriff, zum vergleichen ob Eingabe gleich JSON Wert.
-                let thermal_ores_parse = JSON.stringify("thermal:" + ores + "_ingot")
-                //Ermittelt JSON Wert und wandelt in String um.
-                let check_output = r.json.get("result").get(counter).get("item")
-                check_output.getAsString()
+            //ermitteln der Ausgabe vom Pulverizer und umwandeln in ein String
+            let output_check_0 = r.json.get("result").get(0).get("item")
+            output_check_0.getAsString()
 
-                //erste Pruefung ob Werte uebereinstimmen und Elemente gleich null.
-                if (check_output === thermal_ores_parse) {
-                    if (array_size === counter) {
-                        r.json.get("result").get(counter).add("item", "alltheores:" + ores + "_ingot")
-                        event.custom(r.json).id(r.getId())
-                    }
+            //Der zu prüfende erste Wert.
+            let is_it_ore_1 = JSON.stringify("thermal:" + ore + "_ingot")
+
+            //Prüfung, ob sich die Ausgabe dem zu überprüfenden Wert entspricht.
+            if ( output_check_0 === is_it_ore_1 ) {
+
+                //Hier können Rezepte für Stelle 0 definiert werden.
+                r.json.get("result").get(0).add("item", "alltheores:" + ore + "_ingot")
+
+                //Prüft ob es weitere Ausgaben gibt.
+                if ((r.json.get("result")).size() > 1) {
+                    thermal_ores.forEach(ores => {
+                        let output_check_1 = r.json.get("result").get(1).get("item")
+                        output_check_1.getAsString()
+                        let is_it_ore_2 = JSON.stringify("thermal:" + ores + "_ingot")
+
+                        //Trifft der Inhalt zu, können Rezepte in dem Callback des if Statements abelegt werden.
+                        if ( output_check_1 === is_it_ore_2 ) {
+                            r.json.get("result").get(1).add("item", "alltheores:" + ore + "_ingot")
+                        }
+                        let is_it_nugget = JSON.stringify("thermal:" + ores + "_nugget")
+                        if (output_check_1 === is_it_nugget) {
+                            r.json.get("result").get(1).add("item", "alltheores:" + ore + "_nugget")
+                        }
+                    });
                 }
-                //zweite ueberpruefung ob elemente identisch sind und ausgabe größer wie null.
-                if (check_output === thermal_ores_parse) {
-                    if (array_size > counter) {
-                        r.json.get("result").get(counter).add("item", "alltheores:" + ores + "_ingot")
-                        counter = counter + 1
-
-                        //Initalisieren eines weiteren foreach und Neusetzung der Variablen, fuer zweite Array Stelle.
-                        thermal_ores.forEach(ores => {
-                            check_output = r.json.get("result").get(counter).get("item")
-                            check_output.getAsString()
-                            thermal_ores_parse = JSON.stringify("thermal:" + ores + "_ingot")
-
-                            //erneute Pruefung fuer zweite Stelle mit neuen Werten.
-                            if (check_output === thermal_ores_parse) {
-                                r.json.get("result").get(counter).add("item", "alltheores:" + ores + "_ingot")
-                                counter = counter - 1
-                            }
-                        });
-                    }
-                    //Ueberschreiben des alten Rezeotes nach vollendetem Schleifendurchlauf.
-                    event.custom(r.json).id(r.getId())
-                }
-            });
+                event.custom(r.json).id(r.getId())
+            }
         })
     });
+
+
 
 })
