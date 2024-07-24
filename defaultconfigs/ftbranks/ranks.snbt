@@ -3,7 +3,10 @@
 		name: "Member"
 		power: 1
 		condition: "always_active"
+		command.home: false
 		command.spawnpoint: false
+		command.tpa: false
+		command.tpahere: false
 	}
 	# this rank is given after the first week
 	weekling: {
@@ -18,6 +21,7 @@
 		command.back: true
 		command.home: true
 		command.tpa: true
+		command.tpahere: true
 	}
 	# this rank is given after the third week
 	triple-weekling: {
@@ -39,5 +43,6 @@
 		command.home: true
 		command.spawn: true
 		command.tpa: true
+		command.tpahere: true
 	}
 }
