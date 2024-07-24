@@ -15,6 +15,9 @@
 	double-weekling: {
 		name: "Double Weekling"
 		power: 3
+		command.back: true
+		command.home: true
+		command.tpa: true
 	}
 	# this rank is given after the third week
 	triple-weekling: {
@@ -29,8 +32,12 @@
 	admin: {
 		name: "Admin"
 		power: 1000
-		condition: "op"
+		#condition: "op"
+		condition: "creative_mode"
 		ftbranks.name_format: "&2{name}"
+		command.back: true
+		command.home: true
 		command.spawn: true
+		command.tpa: true
 	}
 }
