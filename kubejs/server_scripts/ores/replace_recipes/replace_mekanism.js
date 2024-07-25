@@ -55,4 +55,10 @@ ServerEvents.recipes(event => {
         })
     })
 
+    event.forEachRecipe({ id: "mekanism:processing/bronze/ingot/from_infusing" }, r => {
+        r.json.get("output").remove("item")
+        r.json.get("output").add("item", "alltheores:bronze_ingot")
+        event.custom(r.json).id(r.getId())
+    })
+
 })
