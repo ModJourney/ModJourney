@@ -25,28 +25,6 @@ ServerEvents.recipes(event => {
         'uranium'
     ]
 
-    let ato_ores = [
-        'aluminum',
-        'lead',
-        'nickel',
-        'osmium',
-        'platinum',
-        'silver',
-        'tin',
-        'uranium',
-        'zinc',
-        'iridium',
-        'steel',
-        'invar',
-        'electrum',
-        'bronze',
-        'enderium',
-        'lumium',
-        'signalum',
-        'constantan',
-        'brass'
-    ]
-
     //Mekanism Ore Replacing.
     mekka_ores.forEach(ore => {
         event.replaceOutput({ output: "mekanism:nugget_" + ore }, "mekanism:nugget_" + ore, "alltheores:" + ore + "_nugget" );

@@ -21,7 +21,6 @@ ServerEvents.recipes(event => {
         'copper',
     ]
 
-        //replace ingots in the multiservo
     thermal_ores.forEach(ore => {
 
         event.forEachRecipe({ type: "thermal:pulverizer" }, r => {

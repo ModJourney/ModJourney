@@ -1,6 +1,6 @@
 //priority 50
 
-//This Script replace Dust recipes from the thermal pulverizer.
+//This Script replace recipes from the thermal-smelter
 
 ServerEvents.recipes(event => {
 
@@ -21,12 +21,11 @@ ServerEvents.recipes(event => {
         'copper',
     ]
 
-        //replace ingots in the multiservo
     thermal_ores.forEach(ore => {
 
         event.forEachRecipe({ type: "thermal:smelter" }, r => {
 
-            //ermitteln der Ausgabe vom Pulverizer und umwandeln in ein String
+            //ermitteln der Ausgabe vom Smelter und umwandeln in ein String
             let output_check_0 = r.json.get("result").get(0).get("item")
             output_check_0.getAsString()
 
@@ -59,8 +58,6 @@ ServerEvents.recipes(event => {
                 event.custom(r.json).id(r.getId())
             }
         })
-    });
-
-
-
+    })
 })
+
