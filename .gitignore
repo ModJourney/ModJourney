@@ -24,6 +24,7 @@
 /world/session.lock
 /world/xaeromap.txt
 /world/deaths
+!/craftpresence
 
 
 
