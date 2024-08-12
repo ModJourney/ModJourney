@@ -22,11 +22,17 @@
 		command.home: true
 		command.tpa: true
 		command.tpahere: true
+		ftbchunks.max_claimed_chunks: 75
 	}
 	# this rank is given after the third week
 	triple-weekling: {
 		name: "Trible Weekling"
 		power: 3
+	}
+	monthling: {
+		name: "Monthling"
+		power: 4
+		ftbchunks.max_claimed_chunks: 100
 	}
 	vip: {
 		name: "VIP"
