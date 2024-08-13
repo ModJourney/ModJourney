@@ -9,10 +9,10 @@
     "detectTechnicPack": true,
     "detectModrinthPack": true,
     "detectBiomeData": true,
-    "detectDimensionData": true,
-    "detectWorldData": true,
+    "detectDimensionData": false,
+    "detectWorldData": false,
     "clientId": "1271491623917977672",
-    "defaultIcon": "grass",
+    "defaultIcon": "icon_512x512",
     "enableJoinRequests": false,
     "preferredClientLevel": 3,
     "resetTimeOnInit": false,
@@ -106,7 +106,7 @@
     "stripTranslationColors": false,
     "stripTranslationFormatting": false,
     "stripExtraGuiElements": false,
-    "configKeyCode": 59
+    "configKeyCode": 96
   },
   "displaySettings": {
     "presenceData": {
@@ -131,7 +131,9 @@
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png"
+      "default": "https://via.placeholder.com/256.png",
+      "robimor": "https://mc-heads.net/avatar/650b3211a0aa401da5f044e66aaa887d",
+      "localhost": "https://api.mcsrvstat.us/icon/localhost"
     },
     "dynamicVariables": {
       "default": "Example Text",
