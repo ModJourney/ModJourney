@@ -132,7 +132,6 @@
     },
     "dynamicIcons": {
       "default": "https://via.placeholder.com/256.png",
-      "robimor": "https://mc-heads.net/avatar/650b3211a0aa401da5f044e66aaa887d",
       "localhost": "https://api.mcsrvstat.us/icon/localhost"
     },
     "dynamicVariables": {
