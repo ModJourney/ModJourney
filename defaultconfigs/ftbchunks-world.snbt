@@ -79,7 +79,7 @@
 	# Default of 0 means no automatic loss of forceloading.
 	# Default: 0.0
 	# Range: 0.0 ~ 3650.0
-	max_idle_days_before_unforce: 30.0d
+	max_idle_days_before_unforce: 7.0d
 
 	# Maximum time in days to keep logs of prevented fakeplayer access to a team's claims.
 	# Default: 7
