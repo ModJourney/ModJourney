@@ -1,9 +1,0 @@
-{
-	chapter_groups: [
-		{ id: "4010DABBE90E310E", title: "Willkommen im Modpack" }
-		{ id: "4E6CD185FB7DD457", title: "Overworld" }
-		{ id: "681B6F4AD984402A", title: "The Nether" }
-		{ id: "7990A32B3F4B170E", title: "The End" }
-		{ id: "524CDEDD30F391D1", title: "admin" }
-	]
-}
