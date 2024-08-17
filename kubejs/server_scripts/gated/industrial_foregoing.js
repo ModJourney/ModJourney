@@ -9,4 +9,8 @@ ServerEvents.recipes(event => {
         '#industrialforegoing:machine_frame_supreme'
     )
 
+    event.replaceInput({id: 'industrialforegoing:laser_drill'},
+        '#forge:gears/gold',
+        stages.stage2.gear
+    )
 })
