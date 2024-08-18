@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "Scroll_1",
-		"1": "Texturen/Scroll_2",
-		"8": "Texturen/Scroll_9",
-		"particle": "Scroll_1"
+		"0": "mod_journey:item/scroll4",
+		"1": "mod_journey:item/scroll4",
+		"3": "mod_journey:item/scroll4",
+		"particle": "mod_journey:item/scroll4"
 	},
 	"elements": [
 		{
@@ -42,7 +42,7 @@
 			"to": [12, 10.1, 7.85],
 			"rotation": {"angle": 0, "axis": "y", "origin": [4, 2, 7]},
 			"faces": {
-				"north": {"uv": [1, 0.75, 7, 7.5], "texture": "#8"},
+				"north": {"uv": [1, 0.75, 7.25, 7.5], "texture": "#3"},
 				"east": {"uv": [15.25, 0, 16, 16], "texture": "#0"},
 				"south": {"uv": [0.75, 8.25, 8, 15], "texture": "#0"},
 				"west": {"uv": [15.25, 0, 16, 16], "texture": "#0"},

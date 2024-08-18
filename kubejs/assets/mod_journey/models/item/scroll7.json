@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "Scroll_1",
-		"1": "Texturen/Scroll_2",
-		"6": "Texturen/Scroll_7",
-		"particle": "Scroll_1"
+		"0": "mod_journey:item/scroll7",
+		"1": "mod_journey:item/scroll7",
+		"6": "mod_journey:item/scroll7",
+		"particle": "mod_journey:item/scroll7"
 	},
 	"elements": [
 		{
