@@ -23,4 +23,5 @@ ServerEvents.recipes(event => {
         event.replaceOutput({ output: "immersiveengineering:dust_" + ore }, "immersiveengineering:dust_" + ore, "alltheores:" + ore + "_dust" );
         event.replaceOutput({ output: "immersiveengineering:storage_" + ore }, "immersiveengineering:storage_" + ore, "alltheores:" + ore + "_block" );
     });
+    event.replaceOutput({ output: "#forge:nuggets/copper"}, "#forge:nuggets/copper", "alltheores:copper_nugget" );
 })
