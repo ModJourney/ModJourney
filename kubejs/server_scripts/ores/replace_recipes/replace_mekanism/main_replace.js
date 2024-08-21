@@ -2,20 +2,6 @@
 
 ServerEvents.recipes(event => {
 
-    let thermal_ores = [
-        'tin',
-        'lead',
-        'silver',
-        'nickel',
-        'bronze',
-        'electrum',
-        'invar',
-        'constantan',
-        'signalum',
-        'lumium',
-        'enderium'
-    ]
-
     let mekka_ores = [
         'bronze',
         'steel',
@@ -23,7 +9,16 @@ ServerEvents.recipes(event => {
         'tin',
         'lead',
         'uranium'
-    ]
+    ];
+
+    let mekka_vanilla = [
+        'iron',
+        'diamond',
+        'gold',
+        'copper'
+    ];
+
+    let mekka_combined = mekka_ores.concat(mekka_vanilla);
 
     //Mekanism Ore Replacing.
     mekka_ores.forEach(ore => {
@@ -37,7 +32,7 @@ ServerEvents.recipes(event => {
 
 
     //enrichment chamber and crusher will not trigger with the inHouse Function replaceOutput
-    mekka_ores.forEach(ore => {
+    mekka_combined.forEach(ore => {
         //replace dust recipes in enrichtment chamber and crusher
         event.forEachRecipe({ output: "mekanism:dust_" + ore }, r => {
             r.json.get("output").add("item", "alltheores:" + ore + "_dust")
