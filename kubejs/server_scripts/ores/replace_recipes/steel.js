@@ -14,4 +14,5 @@ ServerEvents.recipes(event => {
     //entfallen, da andere Mods abhängigkeiten darauf haben, siehe type: "mekanism:smelter"
     //event.remove([{type: "minecraft:smelting"}, {output: "alltheores:steel_ingot"}])
     //event.remove([{type: "minecraft:blasting"}, {output: "alltheores:steel_ingot"}])
+
 })
