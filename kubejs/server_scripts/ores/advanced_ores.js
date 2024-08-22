@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
       });
     });
   }
-  //console.log(advanced_atos)
+  console.log(advanced_atos)
 
   thermal_smelter("ingot");
   thermal_smelter2("dust", "ingot");
