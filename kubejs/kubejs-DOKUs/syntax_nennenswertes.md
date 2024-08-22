@@ -1,6 +1,7 @@
 | Befeh                             | was macht?                     |
 |-----------------------------------|--------------------------------|
 | ```console.log(Object.keys(r))``` | Erhalten von Objekt Keys von r |
+|```X.json['add(com.google.gson.JsonElement)']("String")```|[Discord - Secondary Output in JsonArray](https://discord.com/channels/303440391124942858/1127448911871737936/1127667372023631872)|
 
 
 
