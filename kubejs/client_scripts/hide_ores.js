@@ -1,7 +1,7 @@
 // priority: 0
 
 JEIEvents.hideItems(event => {
-/*
+
     let remove_ore = [
         "ad_astra:iron_plate",
         "ad_astra:iron_rod",
@@ -218,5 +218,5 @@ JEIEvents.hideItems(event => {
     remove_ore.forEach(element => {
         event.hide(element)
     });
-    */
+
 })
