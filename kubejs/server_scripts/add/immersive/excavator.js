@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
         let json = r.json;
         let dim = r.json.get("dimensions")
         //console.log(Object.keys(r))                                  // Liefert Informationen bezüglich der IDs in den Logs
-        dim['add(com.google.gson.JsonElement)']("farming:dim") //https://discord.com/channels/303440391124942858/1127448911871737936/1127667372023631872
+        dim['add(com.google.gson.JsonElement)']("mod_journey:farmworld") //https://discord.com/channels/303440391124942858/1127448911871737936/1127667372023631872
         //console.log(dim)
         //console.log(r.getId())
         event.custom(
