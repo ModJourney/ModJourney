@@ -20,7 +20,7 @@ LootJS.modifiers((event) => {
 
     event
       .addLootTypeModifier([LootType.CHEST, LootType.UNKNOWN])
-      .anyDimension("minecraft:overworld")
+      .anyDimension("mod_journey:farmworld")
       .removeLoot(Ingredient.of(chestBanList))
       .addAlternativesLoot(
         LootEntry.of("minecraft:apple").when((c) => c.randomChance(0.8)),
