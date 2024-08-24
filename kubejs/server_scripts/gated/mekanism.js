@@ -1,6 +1,5 @@
 //priority 0
 
-console.log(' ^dndern der Gated Mekanism Items')
 
 ServerEvents.recipes(event => {
 
