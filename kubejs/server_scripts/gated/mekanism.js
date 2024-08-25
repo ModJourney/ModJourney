@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     )
 
     event.replaceInput([
-            { id: 'mekanism:metallurgic_infuser' },,
+            { id: 'mekanism:metallurgic_infuser' },
             { id: 'mekanismgenerators:generator/heat' }
         ],
         'minecraft:furnace',
