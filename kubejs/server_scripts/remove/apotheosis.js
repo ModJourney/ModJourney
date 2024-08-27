@@ -3,9 +3,9 @@
 ServerEvents.recipes(event => {
 
     // Debug Variablen
-    let debug = "true"
-    let recipe_new = "true"
-    let recipe_old = "true"
+    let debug = "false"
+    let recipe_new = "false"
+    let recipe_old = "false"
 
     //entfernen der Spawnermodule Ignore Players.
     let spawn_modifiers = [
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
 
 
         if (r.getId() === 'apotheosis:spawner/min_delay') {
-            if (debug === "true" || recipe_old === "false") {console.log("Rezept alt: " + r.json)};
+            if (debug === "true" || recipe_old === "true") {console.log("Rezept alt: " + r.json)};
 
             Object.assign(new_stat_changes, {
                 id:"min_delay",
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 
 
         if (r.getId() === 'apotheosis:spawner/max_delay') {
-            if (debug === "true" || recipe_old === "false") {console.log("Rezept alt: " + r.json)};
+            if (debug === "true" || recipe_old === "true") {console.log("Rezept alt: " + r.json)};
 
             Object.assign(new_stat_changes, {
                 id: "max_delay",
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
 
 
         if (r.getId() === 'apotheosis:spawner/max_nearby') {
-            if (debug === "true" || recipe_old === "false") {console.log("Rezept alt: " + r.json)};
+            if (debug === "true" || recipe_old === "true") {console.log("Rezept alt: " + r.json)};
 
             Object.assign(new_stat_changes, {
                 id: "max_nearby_entities",
