@@ -56,6 +56,17 @@ JEIEvents.hideItems(event => {
     event.hide('botania:laputa_shard')
 
 
+    let mekanism_hide = [
+        'mekanismadditions:walkie_talkie',
+        'mekanism:upgrade_anchor',
+        'mekanismadditions:obsidian_tnt',
+        'mekanism:dimensional_stabilizer'
+    ]
+    mekanism_hide.forEach((itemName) => {
+        event.hide(itemName)
+    })
+
+
     // Mystical Agriculture
     let mystical_hide = [
         'mysticalagriculture:harvester',
