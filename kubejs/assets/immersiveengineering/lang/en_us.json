@@ -1,5 +1,7 @@
 {
-  "desc.immersiveengineering.info.mineral.marsite": "Mars",
-  "immersiveengineering.info.mineral.marsite": "Mars2",
-  "info.mineral.marsite": "Mars3"
+  "desc.immersiveengineering.info.mineral.glacite": "Glacite",
+  "desc.immersiveengineering.info.mineral.marsite": "Marsite",
+  "desc.immersiveengineering.info.mineral.mercurite": "Mercurite",
+  "desc.immersiveengineering.info.mineral.moonite": "Moonite",
+  "desc.immersiveengineering.info.mineral.venrurite": "Venusite"
 }
