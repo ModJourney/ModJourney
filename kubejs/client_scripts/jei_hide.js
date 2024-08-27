@@ -190,6 +190,30 @@ JEIEvents.hideItems(event => {
         event.hide( element + '_spawn_egg' )
     });
 
+    let dyes = [
+        'white',
+        'orange',
+        'magenta',
+        'light_blue',
+        'yellow',
+        'lime',
+        'pink',
+        'gray',
+        'light_gray',
+        'cyan',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black'
+    ]
+
+    dyes.forEach(colour => {
+        event.hide(Item.of(`botanypots:${colour}_concrete_hopper_botany_pot`))
+        event.hide(Item.of(`botanypots:${colour}_concrete_botany_pot`))
+    });
+
 
     //alltheores - Other Ores werden removed
     const other_oreToRemove = [
