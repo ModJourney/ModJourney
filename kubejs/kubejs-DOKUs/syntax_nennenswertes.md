@@ -30,4 +30,8 @@
 | [ExtremeReactors Wiki](https://biggerseries.net/en/biggerreactors/reactor/moderators)                                                               | Kühlblöcke             |
 | [ExtremeReactor Wiki](https://biggerseries.net/biggerreactors/datapacks)                                                                           | Erstellen von Rezepten |
 | [ExtremeReactor Quelltext](https://github.com/ZeroNoRyouki/ExtremeReactors2/blob/c1935485af0e3ee44a415f487d3a76597a853d94/src/main/java/it/zerono/mods/extremereactors/api/reactor/ModeratorsRegistry.java#L156)                                                                                                                                           |   Quelltext zum Lesen von Kühlböcken                     | //end of line
-|                                                                                                                                                     |                        |
+
+| custom Dokus                                                                                                                                                  | Kurzbeschreibung                     |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+| [Patchouli - Doku](https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/getting-started#for-an-addon-modder-or-modpacker-modifying-another-mods-book) | Wo und wie werden die Files angelegt |
+|                                                                                                                                                               |                                      |
