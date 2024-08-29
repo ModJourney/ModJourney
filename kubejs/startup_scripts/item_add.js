@@ -16,4 +16,14 @@ StartupEvents.registry('item', event => {
 		.maxStackSize(64)
 		.displayName("Leere Schriftrolle")
 		.rarity("RARE")
+
+	event.create('mod_journey:the_rod_of_real_life')
+		.displayName('The Rod of Real Life')
+		.rarity("RARE")
+		.maxStackSize(1)
+
+	event.create('mod_journey:anti_ingot')
+		.displayName('Antimatter Ingot')
+		.rarity("EPIC")
+		.maxStackSize(64)
 })
