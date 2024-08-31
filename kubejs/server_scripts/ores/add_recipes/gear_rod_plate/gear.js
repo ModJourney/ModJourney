@@ -4,7 +4,7 @@
 let change_gears = (event) => {
 
     //entfernen aller alten Zahnrad Rezepte
-        event.remove({output: "#forge:gears"})
+        event.remove({output: "#forge:gears", not:{mod: "enderio"}})
     //Initalisieren für alle Rezepte, welche nicht auf den Standartweg zu löschen sind.
         ato.alloy.concat(ato.metall,ato.vanilla).forEach(metal => {
             event.remove({id: "thermal:machines/press/press_" + metal + "_ingot_to_gear"})
