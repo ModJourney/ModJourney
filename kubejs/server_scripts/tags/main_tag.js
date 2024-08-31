@@ -24,4 +24,7 @@ ServerEvents.tags('item', event => {
     //Reprocessor
     extreme_tagging(event, "mod_journey:extreme_reactor/reprocessor", extreme_object.reprocessor)
 
+    event.add("forge:storage_blocks/uranium", "bigreactors:yellorium_block")
+    event.add("forge:ingots/uranium", "bigreactors:yellorium_ingot")
+
 })
