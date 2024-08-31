@@ -56,6 +56,17 @@ JEIEvents.hideItems(event => {
     event.hide('botania:laputa_shard')
 
 
+    let mekanism_hide = [
+        'mekanismadditions:walkie_talkie',
+        'mekanism:upgrade_anchor',
+        'mekanismadditions:obsidian_tnt',
+        'mekanism:dimensional_stabilizer'
+    ]
+    mekanism_hide.forEach((itemName) => {
+        event.hide(itemName)
+    })
+
+
     // Mystical Agriculture
     let mystical_hide = [
         'mysticalagriculture:harvester',
@@ -188,6 +199,30 @@ JEIEvents.hideItems(event => {
         event.hide(Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:' + element + '}}}}'))
         event.hide(Item.of('enderio:broken_spawner', '{BlockEntityTag:{EntityStorage:{Entity:{id:' + element + '}}}}'))
         event.hide( element + '_spawn_egg' )
+    });
+
+    let dyes = [
+        'white',
+        'orange',
+        'magenta',
+        'light_blue',
+        'yellow',
+        'lime',
+        'pink',
+        'gray',
+        'light_gray',
+        'cyan',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black'
+    ]
+
+    dyes.forEach(colour => {
+        event.hide(Item.of(`botanypots:${colour}_concrete_hopper_botany_pot`))
+        event.hide(Item.of(`botanypots:${colour}_concrete_botany_pot`))
     });
 
 
