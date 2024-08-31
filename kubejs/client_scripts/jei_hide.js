@@ -201,6 +201,7 @@ JEIEvents.hideItems(event => {
         event.hide( element + '_spawn_egg' )
     });
 
+    //removen der Concrete Botany Pots
     let dyes = [
         'white',
         'orange',
@@ -223,6 +224,31 @@ JEIEvents.hideItems(event => {
     dyes.forEach(colour => {
         event.hide(Item.of(`botanypots:${colour}_concrete_hopper_botany_pot`))
         event.hide(Item.of(`botanypots:${colour}_concrete_botany_pot`))
+    });
+
+
+    let extreme_remove = [
+        //kreativgedöns
+        'bigreactors:basic_turbinecreativesteamgenerator',
+        'bigreactors:reinforced_turbinecreativesteamgenerator',
+        'bigreactors:reinforced_reactorcreativewatergenerator',
+        //für cc
+        'bigreactors:reinforced_turbinecomputerport',
+        'bigreactors:reinforced_reactorcomputerport',
+
+        //battery zu OP pro Modul 680T FE
+        'bigreactors:energizerpowerport_fe',
+        'bigreactors:energizerstatus',
+        'bigreactors:energizercomputerport',
+        'bigreactors:energizercell',
+        'bigreactors:energizercasing',
+        'bigreactors:energizercontroller',
+        'bigreactors:energycore',
+        'bigreactors:energizerchargingport_fe'
+    ]
+
+    extreme_remove.forEach(element => {
+        event.hide(Item.of(element))
     });
 
 
