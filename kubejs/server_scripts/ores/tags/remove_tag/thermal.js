@@ -42,4 +42,9 @@ let ores_thermal_tag = (event) => {
         add_removeTag(event, 'thermal:' + name + '_ore')
     });
 
+    thermal_vanilla.concat("diamond").forEach(name => {
+        add_removeTag(event, `thermal:${name}_gear`)
+        add_removeTag(event, `thermal:${name}_plate`)
+        add_removeTag(event, `thermal:${name}_dust`)
+    });
 }

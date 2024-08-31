@@ -53,6 +53,14 @@ ServerEvents.recipes(event => {
                 }
                 event.custom(r.json).id(r.getId())
             }
+
+            //replaced thermal diamond dust.
+            if (r.json.get("result").get(0).get("item") + '' === '"thermal:diamond_dust"') {
+                r.json.get("result").get(0).add("item", "alltheores:diamond_dust")
+                event.custom(r.json).id(r.getId())
+            }
         })
     });
+
+
 })

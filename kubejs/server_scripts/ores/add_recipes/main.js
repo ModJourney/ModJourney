@@ -14,6 +14,8 @@ copper nuggets
 
 ServerEvents.recipes(event => {
 
+    event.remove({output: "#ore:remove"})
+
     change_gears(event)
     change_plates(event)
     change_rods(event)
