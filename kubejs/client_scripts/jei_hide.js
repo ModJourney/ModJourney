@@ -251,6 +251,25 @@ JEIEvents.hideItems(event => {
         event.hide(Item.of(element))
     });
 
+    //remove Ars Items from JEI
+   let ars_remove = [
+        'ars_nouveau:ritual_moonfall',
+        'ars_nouveau:ritual_cloudshaping',
+        'ars_nouveau:ritual_sunrise',
+        'ars_nouveau:ritual_conjure_island_plains',
+        'ars_nouveau:ritual_forestation',
+        'ars_nouveau:ritual_flowering',
+        'ars_nouveau:ritual_conjure_island_desert',
+        'ars_nouveau:spell_turret',
+        'ars_nouveau:timer_spell_turret',
+        'ars_nouveau:basic_spell_turret',
+        'ars_nouveau:rotating_spell_turret',
+        'ars_nouveau:storage_lectern'
+    ]
+
+    ars_remove.forEach(element => {
+        event.hide(Item.of(element))
+    });
 
     //alltheores - Other Ores werden removed
     const other_oreToRemove = [
