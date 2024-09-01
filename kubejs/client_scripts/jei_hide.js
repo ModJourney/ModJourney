@@ -251,6 +251,7 @@ JEIEvents.hideItems(event => {
         event.hide(Item.of(element))
     });
 
+
     //remove Ars Items from JEI
    let ars_remove = [
         'ars_nouveau:ritual_moonfall',
