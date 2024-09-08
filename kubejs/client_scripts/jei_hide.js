@@ -312,6 +312,6 @@ JEIEvents.hideItems(event => {
 
     event.hide(Item.of('ae2:vibration_chamber'))
     event.hide(Item.of('mekanism:creative_chemical_tank'))
-
+    event.hide(Item.of('easy_villagers:iron_farm'))
 
 })
