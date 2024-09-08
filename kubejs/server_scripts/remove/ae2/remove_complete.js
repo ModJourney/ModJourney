@@ -3,6 +3,7 @@
 ServerEvents.recipes(event => {
 
     let entfernen = [
+        'ae2:vibration_chamber',                        //dodgt early game
         'megacells:mega_interface',                     //ersatz durch extended AE
         'megacells:mega_pattern_provider',              //ersatz durch extended AE
         'megacells:cable_mega_pattern_provider',        //ersatz durch extended AE
@@ -18,9 +19,8 @@ ServerEvents.recipes(event => {
     ]
 
     entfernen.forEach((element) => {
-        event.remove({ 
+        event.remove({
             output: element
         })
     });
-    
 })
