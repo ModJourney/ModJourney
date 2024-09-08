@@ -16,7 +16,13 @@ JEIEvents.hideItems(event => {
         'thermal:redstone_tnt',
         'thermal:slime_tnt',
         'thermal:phyto_tnt',
-        'thermal:nuke_tnt'
+        'thermal:nuke_tnt',
+        'thermal:lightning_grenade',
+        'thermal:ice_grenade',
+        'thermal:explosive_grenade',
+        'thermal:phyto_grenade',
+        'thermal:fire_grenade',
+        'thermal:earth_grenade'
     ]
 
     tnt.forEach(element => {
@@ -60,7 +66,8 @@ JEIEvents.hideItems(event => {
         'mekanismadditions:walkie_talkie',
         'mekanism:upgrade_anchor',
         'mekanismadditions:obsidian_tnt',
-        'mekanism:dimensional_stabilizer'
+        'mekanism:dimensional_stabilizer',
+        'mekanism:digital_miner'
     ]
     mekanism_hide.forEach((itemName) => {
         event.hide(itemName)
@@ -265,7 +272,10 @@ JEIEvents.hideItems(event => {
         'ars_nouveau:timer_spell_turret',
         'ars_nouveau:basic_spell_turret',
         'ars_nouveau:rotating_spell_turret',
-        'ars_nouveau:storage_lectern'
+        'ars_nouveau:storage_lectern',
+        'ars_nouveau:warp_scroll',
+        'ars_nouveau:stable_warp_scroll',
+        'ars_nouveau:portal'
     ]
 
     ars_remove.forEach(element => {
@@ -300,6 +310,7 @@ JEIEvents.hideItems(event => {
         event.hide(Item.of('ae2:facade', '{item:"alltheores:other_' + atm_ore + '_ore"}'))
     })
 
+    event.hide(Item.of('ae2:vibration_chamber'))
     event.hide(Item.of('mekanism:creative_chemical_tank'))
 
 
