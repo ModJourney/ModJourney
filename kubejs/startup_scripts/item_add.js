@@ -26,4 +26,8 @@ StartupEvents.registry('item', event => {
 		.displayName('Antimatter Ingot')
 		.rarity("EPIC")
 		.maxStackSize(64)
+
+	event.create('mod_journey:geronnener_blut_klumpen')
+		.displayName('clotted blood clump')
+		.maxStackSize(64)
 })
