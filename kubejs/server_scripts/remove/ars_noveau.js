@@ -21,8 +21,13 @@ ServerEvents.recipes(event => {
     let ars_tps_killer = [
         'ars_nouveau:storage_lectern'
     ]
+    let ars_warped_scrolls = [
+        'ars_nouveau:warp_scroll',
+        'ars_nouveau:stable_warp_scroll',
+        'ars_nouveau:portal'
+    ]
 
-    ars_weather_and_time.concat(ars_biome_modification, ars_spell_maker, ars_tps_killer).forEach(element => {
+    ars_weather_and_time.concat(ars_biome_modification, ars_spell_maker, ars_tps_killer, ars_warped_scrolls).forEach(element => {
         event.remove({output: element})
     });
 
