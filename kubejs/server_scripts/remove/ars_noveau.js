@@ -31,6 +31,20 @@ ServerEvents.recipes(event => {
         event.remove({output: element})
     });
 
+
+    let ars_glyphen = [
+        'ars_nouveau:wololo',
+        'ars_nouveau:glyph_animate_block',
+        'ars_nouveau:glyph_linger',
+        'ars_nouveau:glyph_wall',
+        'ars_nouveau:burst'
+    ]
+
+    ars_glyphen.forEach(glyphen => {
+        event.remove({output: glyphen});
+    });
+
+
 })
 
 
