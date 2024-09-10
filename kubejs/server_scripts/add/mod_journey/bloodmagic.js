@@ -17,13 +17,13 @@ ServerEvents.recipes(event => {
           "item": "minecraft:netherite_block"
         },
         "output": {
-          "item": "mod_journey:geronnener_blut_klumpen"
+          "item": "mod_journey:clotted_blood_clump"
         },
         "upgradeLevel": 4
     }).id("modjourney:shapless/clotted_blood_clump")
 
     event.shapeless(
-        Item.of('mod_journey:blut_block', 1), [
-        '9x mod_journey:geronnener_blut_klumpen'
+        Item.of('mod_journey:clotted_bloodblock', 1), [
+        '9x mod_journey:clotted_blood_clump'
     ]).id("modjourney:shapless/clotted_blood_block")
 });
