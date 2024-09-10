@@ -13,7 +13,13 @@ ServerEvents.recipes(event => {
         'thermal:redstone_tnt',
         'thermal:slime_tnt',
         'thermal:phyto_tnt',
-        'thermal:nuke_tnt'
+        'thermal:nuke_tnt',
+        'thermal:lightning_grenade',
+        'thermal:ice_grenade',
+        'thermal:explosive_grenade',
+        'thermal:phyto_grenade',
+        'thermal:fire_grenade',
+        'thermal:earth_grenade'
     ]
 
     // Funktionsaufruf zum entfernen der Linsen
