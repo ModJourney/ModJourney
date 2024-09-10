@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "mod_journey:block/blut_block",
-		"particle": "mod_journey:block/blut_block"
+		"1": "mod_journey:block/clotted_bloodblock",
+		"particle": "mod_journey:block/clotted_bloodblock"
 	},
 	"elements": [
 		{
