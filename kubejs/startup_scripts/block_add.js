@@ -13,7 +13,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:mineable/pickaxe')
 
     //Erstellen des geronnen_blut_blocks
-    event.create('mod_journey:blut_block')
+    event.create('mod_journey:clotted_bloodblock')
         .displayName('Clotted Bloodblock')
         .stoneSoundType()
         .hardness(1.0)
