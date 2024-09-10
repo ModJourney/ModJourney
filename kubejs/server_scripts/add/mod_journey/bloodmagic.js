@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         "type": "bloodmagic:altar",
         "altarSyphon": 42000000,
         "consumptionRate": 50,
-        "drainRate": 100,
+        "drainRate": 5,
         "input": {
           "item": "minecraft:netherite_block"
         },
