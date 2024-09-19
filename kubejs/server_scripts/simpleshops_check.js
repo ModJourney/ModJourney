@@ -16,27 +16,28 @@ BlockEvents.rightClicked('simpleshops:creative_simple_shop', event => {
     let coord = {
         tech: {
             x: {
-                min: 64,
-                max: 79
+                min: -48,
+                max: -17
             },
             z: {
-                min: -16,
-                max: 32
+                min: 112,
+                max: 143
             },
             tag: "tech"
         },
         magic: {
             x: {
-                min: 48,
-                max: 64
+                min: -32,
+                max: -1
             },
             z: {
-                min: -16,
-                max: 32
+                min: 80,
+                max: 111
             },
             tag: "magic"
         }
     };
+
 
     //Matrix erstellung. Prüft ob sich Spieler im genannten Bereich befindet. Gibt true oder false zurück
     let tech_x_check = (playerX >= coord.tech.x.min && playerX <= coord.tech.x.max);
