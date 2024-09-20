@@ -27,7 +27,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll1', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Industrial Foregoing")
             ])
         }
     })
@@ -36,7 +39,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll2', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Ad Astra")
             ])
         }
     })
@@ -45,7 +51,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll3', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Thermal Series")
             ])
         }
     })
@@ -54,7 +63,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll4', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Applied Energistics")
             ])
         }
     })
@@ -63,7 +75,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll5', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Extreme Reactor")
             ])
         }
     })
@@ -72,7 +87,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll6', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Powah")
             ])
         }
     })
@@ -81,7 +99,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll7', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Ender IO")
             ])
         }
     })
@@ -90,7 +111,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll8', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Flux Network")
             ])
         }
     })
@@ -99,7 +123,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('mod_journey:scroll9', (item, advanced, text) => {
         if (event.shift) {
             text.add(2,[
-                Text.green("NIY")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+                Text.green("Schaltet im Questbuch frei:")      //Wenn Shift, wird dieser Text angezeigt. Text kann hier definiert werden.
+            ])
+            text.add(3,[
+                Text.gold("Mekanism")
             ])
         }
     })
