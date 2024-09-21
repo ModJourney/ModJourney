@@ -23,6 +23,29 @@ ItemEvents.tooltip(event => {
         })
     }
 
+    let magic_scrolls_array = [
+        "one",
+        "two",
+        "three",
+        "blank"
+    ]
+
+    magic_scrolls_array.forEach(scroll => {
+        event.addAdvanced('mod_journey:magic_scroll_' + scroll, (item, advanced, text) => {
+
+            text.add(1, [Text.yellow('Mit diesem Gegenstand, lassen sich verdeckte Quests freischalten.')])
+            if (!event.shift) {
+                text.add(2, [
+                    Text.gold('Hold '),
+                    Text.yellow('Shift '),
+                    Text.gold('to see more info.')
+                ])
+            }
+        })
+    });
+
+
+
     //Schriftrolle 1
     event.addAdvanced('mod_journey:scroll1', (item, advanced, text) => {
         if (event.shift) {
@@ -145,4 +168,42 @@ ItemEvents.tooltip(event => {
             ])
         }
     })
+
+
+    //Magic Scroll Blank
+    event.addAdvanced('mod_journey:magic_scroll_blank', (item, advanced, text) => {
+        if (event.shift) {
+            text.add(2, [
+                Text.green("Wird zum weitercraften benötigt")
+            ])
+        }
+    })
+
+    //Magic Scroll Blank
+    event.addAdvanced('mod_journey:magic_scroll_one', (item, advanced, text) => {
+        if (event.shift) {
+            text.add(2, [
+                Text.green("Schaltet Blood Magic frei.")
+            ])
+        }
+    })
+
+    //Magic Scroll Blank
+    event.addAdvanced('mod_journey:magic_scroll_two', (item, advanced, text) => {
+        if (event.shift) {
+            text.add(2, [
+                Text.green("Schaltet Ars Noveau frei.")
+            ])
+        }
+    })
+
+    //Magic Scroll Blank
+    event.addAdvanced('mod_journey:magic_scroll_three', (item, advanced, text) => {
+        if (event.shift) {
+            text.add(2, [
+                Text.green("Schaltet Mob Grinding Utils frei.")
+            ])
+        }
+    })
+
 })
