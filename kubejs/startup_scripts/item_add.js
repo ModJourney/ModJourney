@@ -30,4 +30,22 @@ StartupEvents.registry('item', event => {
 	event.create('mod_journey:clotted_blood_clump')
 		.displayName('Clotted Blood Clump')
 		.maxStackSize(64)
+
+	let magic_scrolls_array = [
+		"blank",
+		"one",
+		"two",
+		"three"
+	]
+
+	let magic_counter = 0;
+	magic_scrolls_array.forEach(scroll => {
+		event.create( 'mod_journey:magic_scroll_' + scroll )
+		.texture( 'mod_journey:magic_scroll_' + scroll )
+		.maxStackSize(16)
+		.displayName( "Magische Schriftrolle " + magic_counter )
+		.rarity( "EPIC" )
+
+		magic_counter = magic_counter + 1;
+	});
 })
