@@ -1,4 +1,4 @@
-BlockEvents.leftClicked(event => {
+BlockEvents.broken(event => {
 
     //Überprüfung findet nur statt, wenn Aktionen in der Overworld statt finden.
     if (event.player.level.dimension == "minecraft:overworld") {
@@ -9,18 +9,20 @@ BlockEvents.leftClicked(event => {
             inOffhand: event.player.offHandItem.getId(),
             //Items können hier zur Überprüfung ins Array hinzugefügt werden.
             badItems: [
-                "minecraft:stick",
-                "minecraft:wooden_axe"
+                'ars_nouveau:novice_spell_book',
+                'ars_nouveau:apprentice_spell_book',
+                'ars_nouveau:archmage_spell_book',
+                'ars_nouveau:creative_spell_book'
             ]
         }
 
         //Überprüfen des Arrays in observer items, anhand der Offhand oder Mainhand. Bei zutreffenden setzt wert auf true
         //Anschließend wird beides Zusammengehauen in baditems, wenn einer der Werte true, dann ausgabe true
-        let baditemsfind_for_Mainhand = observere_items.badItems.some(thing => thing.includes(observere_items.inHand))
-        let baditemsfind_for_Offhand = observere_items.badItems.some(thing => thing.includes(observere_items.inOffhand))
-        let baditemsfind = (baditemsfind_for_Mainhand === "true" || baditemsfind_for_Offhand === "true")
+        let baditemsfind_for_Mainhand = observere_items.badItems.includes(observere_items.inHand)
+        let baditemsfind_for_Offhand = observere_items.badItems.includes(observere_items.inOffhand)
+        let baditemsfind = baditemsfind_for_Mainhand || baditemsfind_for_Offhand
 
-        if (baditemsfind === "true") {
+        if (baditemsfind) {
             //Erstellen des Logobjektes. im player, wird eine rechtsverschiebung für eine Nullstelle. Dann wird gerundet, anschließend wird zurückgerechnet.
             let log_player = {
                 player: {
