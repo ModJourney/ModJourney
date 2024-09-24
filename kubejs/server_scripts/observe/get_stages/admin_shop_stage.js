@@ -17,8 +17,8 @@ PlayerEvents.tick(event => {
                     event,
                     magic_admin.x.min,
                     magic_admin.x.max,
-                    technic_admin.z.min,
-                    technic_admin.z.max
+                    magic_admin.z.min,
+                    magic_admin.z.max
                 )
 
                 if (player_in_magic_region || player_in_technic_region) {
