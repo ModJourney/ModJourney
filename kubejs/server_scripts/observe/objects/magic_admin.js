@@ -1,12 +1,11 @@
-/**definiert die größe des Magic Shops */
-
+/**definiert die größe des Technik Shops */
 let magic_admin = {
     x : {
-        min: -48,
-        max: -17
+        min: -32,
+        max: -1
     },
     z : {
-        min: 112,
-        max: 143
+        min: 80,
+        max: 111
     }
 }
