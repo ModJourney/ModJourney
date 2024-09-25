@@ -4,7 +4,7 @@
  */
 let mod_jounrey_server_check = (event) => {
     let is_server = (
-        event.player.getLevel().toString() === "ServerLevel[Neue Welt]" &&
+        event.player.getLevel().toString() === "ServerLevel[modjourney_server]" &&
         event.player.level.getDimension().toString() === "minecraft:overworld"
     );
 
