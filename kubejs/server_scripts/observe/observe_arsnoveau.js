@@ -1,3 +1,4 @@
+
 BlockEvents.broken(event => {
 
     //Überprüfung findet nur statt, wenn Aktionen in der Overworld statt finden.
