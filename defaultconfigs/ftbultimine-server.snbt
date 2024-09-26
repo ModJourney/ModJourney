@@ -10,7 +10,7 @@
 	# Hunger multiplied for each block mined with ultimine
 	# Default: 20.0
 	# Range: 0.0 ~ 10000.0
-	exhaustion_per_block: 20.0d
+	exhaustion_per_block: 40.0d
 	
 	# Amount of experience taken per block mined (fractional values allowed)
 	# Default: 0.0
@@ -41,7 +41,7 @@
 	
 	# Require a damageable tool, or an item in the ftbultimine:tools tag, to ultimine.
 	# Default: false
-	require_tool: false
+	require_tool: true
 	
 	# Right-click with an axe with the Ultimine key held to strip multiple logs and scrape/unwax copper blocks
 	# Default: true
