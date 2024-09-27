@@ -7,5 +7,17 @@ ServerEvents.recipes(event => {
         { output: 'mekanism:digital_miner' }
     ])
 
+    let MekaSuit = [
+        'mekanism:mekasuit_helmet',  // Meka Helm
+        'mekanism:mekasuit_bodyarmor',   // Meka Bodyarmor
+        'mekanism:mekasuit_pants', // Meka Pants
+        'mekanism:mekasuit_boots', // Meka Boots
+        'mekanism:module_energy_unit', // Meka energy Unit
+    ];
+
+    // Entfernen aller definierten Rezepte
+    MekaSuit.forEach(recipeId => {
+        event.remove({ id: recipeId });
+    });
     //event.remove({ id: 'minecraft:enchantment.mekanismadditions.walkie_talkie' })
 })
