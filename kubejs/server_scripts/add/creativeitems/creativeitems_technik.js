@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
             "item": "mekanism:mekasuit_bodyarmor"
         }
     });
-    
+
     // Rezept für Mekasuit Pants (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
@@ -153,18 +153,10 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "mekanism:creative_energy_cube",
             "count": 1,
-            "nbt": {
-                "mekData": {
-                    "EnergyContainers": [
-                        {
-                            "Container": 0,
-                            "stored": 18446744073709551615.9999
-                        }
-                    ]
-                }
-            }
+            "nbt": "{mekData:{EnergyContainers:[{Container:0b,stored:\"18446744073709551615.9999\"}]}}"
         }
     });
+
 
     // Rezept für Dimension Card (Ultimate Crafting Table)
     event.custom({
@@ -190,10 +182,6 @@ ServerEvents.recipes(event => {
             "item": "aeinfinitybooster:dimension_card"
         }
     });
-
-
-
-
 });
- 
-    
+
+
