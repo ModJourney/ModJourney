@@ -32,6 +32,26 @@ JEIEvents.hideItems(event => {
     //thermal series hide florb
     event.hide('thermal:florb')
 
+    //thermal coins hide
+    const coins = [
+        'thermal:iron_coin',
+        'thermal:copper_coin',
+        'thermal:netherite_coin',
+        'thermal:tin_coin',
+        'thermal:lead_coin',
+        'thermal:nickel_coin',
+        'thermal:electrum_coin',
+        'thermal:invar_coin',
+        'thermal:constantan_coin',
+        'thermal:signalum_coin',
+        'thermal:lumium_coin',
+        'thermal:enderium_coin'
+    ];
+
+    coins.forEach(element => {
+        event.hide(element);   
+    });
+
     //botania lenses removen
 
     const lens = [
