@@ -49,7 +49,7 @@ JEIEvents.hideItems(event => {
     ];
 
     coins.forEach(element => {
-        event.hide(element);   
+        event.hide(element);
     });
 
     //botania lenses removen
@@ -333,5 +333,6 @@ JEIEvents.hideItems(event => {
     event.hide(Item.of('ae2:vibration_chamber'))
     event.hide(Item.of('mekanism:creative_chemical_tank'))
     event.hide(Item.of('easy_villagers:iron_farm'))
+    event.hide(Item.of('ae2wtlib:quantum_bridge_card'))
 
 })
