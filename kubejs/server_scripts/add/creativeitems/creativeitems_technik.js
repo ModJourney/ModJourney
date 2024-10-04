@@ -182,6 +182,32 @@ ServerEvents.recipes(event => {
             "item": "aeinfinitybooster:dimension_card"
         }
     }).id('mod_journey:creative/dimension_card');
-});
+
+
+    /// Recipe for creative ae energy cell (Ultimate Crafting Table)
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "tier": 4,
+        "pattern": [
+            "CCCCC",
+            "CEEEC",
+            "CECEC",
+            "CEEEC",
+            "CCCCC",
+        ],
+        "key": {
+            "C": {
+                "item": "thermal:gold_coin"
+            },
+            "E": {
+                "item": "ae2:dense_energy_cell"
+            }
+        },
+        "result": {
+            "item": "ae2:creative_energy_cell"
+        }
+    });
+
+}).id('mod_journey:creative/creative_energy_cell');
 
 
