@@ -16,10 +16,10 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "ars_nouveau:archmage_spell_book"
+                "item": stages.stage3.magic.mid
             },
             "B": {
-                "item": "botania:elementium_ingot"
+                "item": stages.stage1.magic.mid
             }
         },
         "result": {
@@ -43,10 +43,10 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "ars_nouveau:archmage_spell_book"
+                "item": stages.stage3.magic.mid
             },
             "B": {
-                "item": "botania:terrasteel_ingot"
+                "item": stages.stage1.magic.end
             }
         },
         "result": {
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "ars_nouveau:archmage_spell_book"
+                "item": stages.stage3.magic.mid
             },
             "B": {
                 "item": "apotheosis:endshelf"
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "ars_nouveau:archmage_spell_book"
+                "item": stages.stage3.magic.mid
             },
             "B": {
                 "item": "ars_nouveau:arcane_pedestal"

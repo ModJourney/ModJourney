@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_helmet"
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_chestplate"
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_leggings"
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_boots"
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             }
         },
         "result": {
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "ae2:engineering_processor"
@@ -183,7 +183,6 @@ ServerEvents.recipes(event => {
         }
     }).id('mod_journey:creative/dimension_card');
 
-
     /// Recipe for creative ae energy cell (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
@@ -191,7 +190,7 @@ ServerEvents.recipes(event => {
         "pattern": [
             "CCCCC",
             "CEEEC",
-            "CECEC",
+            "CENEC",
             "CEEEC",
             "CCCCC",
         ],
@@ -201,13 +200,16 @@ ServerEvents.recipes(event => {
             },
             "E": {
                 "item": "ae2:dense_energy_cell"
+            },
+            "N": {
+                "item": stages.stage3.core
             }
         },
         "result": {
             "item": "ae2:creative_energy_cell"
         }
-    });
+    }).id('mod_journey:creative/creative_energy_cell');
 
-}).id('mod_journey:creative/creative_energy_cell');
+})
 
 

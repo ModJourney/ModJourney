@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
             Item.of("ars_nouveau:archmage_spell_book"),
             '5x thermal:gold_coin'
         ]
-    ).id("modjourney:creative/annotated_codex")
+    ).id("mod_journey:creative/annotated_codex")
 })
 
 
