@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     // Rezept für Mekasuit Helmet (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGGGG",
             "GGGGG",
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_helmet"
@@ -25,12 +25,12 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "mekanism:mekasuit_helmet"
         }
-    });
+    }).id('mod_journey:creative/mekasuit_helmet');
 
     // Rezept für Mekasuit Body Armor (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGGGG",
             "GGGGG",
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_chestplate"
@@ -52,12 +52,12 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "mekanism:mekasuit_bodyarmor"
         }
-    });
+    }).id('mod_journey:creative/mekasuit_bodyarmor');
 
     // Rezept für Mekasuit Pants (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGGGG",
             "GGGGG",
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_leggings"
@@ -79,12 +79,12 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "mekanism:mekasuit_pants"
         }
-    });
+    }).id('mod_journey:creative/mekasuit_pants');
 
     // Rezept für Mekasuit Boots (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGGGG",
             "GGGGG",
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "minecraft:diamond_boots"
@@ -106,12 +106,12 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "mekanism:mekasuit_boots"
         }
-    });
+    }).id('mod_journey:creative/mekasuit_boots');
 
     // Rezept für Energy Unit (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGG",
             "GCG",
@@ -122,18 +122,18 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             }
         },
         "result": {
             "item": "mekanism:module_energy_unit"
         }
-    });
+    }).id('mod_journey:creative/module_energy_unit');
 
     // Rezept für Creative Energy Cube (Ultimate Crafting Table) mit NBT-Daten
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGGGGGGGG",
             "GGGGGGGGG",
@@ -155,13 +155,13 @@ ServerEvents.recipes(event => {
             "count": 1,
             "nbt": "{mekData:{EnergyContainers:[{Container:0b,stored:\"18446744073709551615.9999\"}]}}"
         }
-    });
+    }).id('mod_journey:creative/creative_energy_cube');
 
 
     // Rezept für Dimension Card (Ultimate Crafting Table)
     event.custom({
         "type": "extendedcrafting:shaped_table",
-        "tier": 4,  // Ultimate Crafting Table (höchster Tier-Level)
+        "tier": 4,
         "pattern": [
             "GGGGG",
             "GGCBG",
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
                 "item": "thermal:gold_coin"
             },
             "C": {
-                "item": "powah:crystal_nitro"
+                "item": stages.stage3.core
             },
             "B": {
                 "item": "ae2:engineering_processor"
@@ -181,7 +181,35 @@ ServerEvents.recipes(event => {
         "result": {
             "item": "aeinfinitybooster:dimension_card"
         }
-    });
-});
+    }).id('mod_journey:creative/dimension_card');
+
+    /// Recipe for creative ae energy cell (Ultimate Crafting Table)
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "tier": 4,
+        "pattern": [
+            "CCCCC",
+            "CEEEC",
+            "CENEC",
+            "CEEEC",
+            "CCCCC",
+        ],
+        "key": {
+            "C": {
+                "item": "thermal:gold_coin"
+            },
+            "E": {
+                "item": "ae2:dense_energy_cell"
+            },
+            "N": {
+                "item": stages.stage3.core
+            }
+        },
+        "result": {
+            "item": "ae2:creative_energy_cell"
+        }
+    }).id('mod_journey:creative/creative_energy_cell');
+
+})
 
 
