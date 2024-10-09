@@ -24,7 +24,7 @@
         "conditions": {
           "items": [
             {
-              "item": "thermal:bronze_coin"
+              "items": ["thermal:bronze_coin"]
             }
           ]
         }
