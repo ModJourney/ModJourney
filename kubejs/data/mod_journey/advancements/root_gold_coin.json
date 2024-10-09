@@ -23,7 +23,7 @@
       "conditions": {
         "items": [
           {
-            "item": "thermal:gold_coin"
+            "items": ["thermal:gold_coin"]
           }
         ]
       }
