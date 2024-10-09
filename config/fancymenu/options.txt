@@ -8,16 +8,16 @@ B:force_fullscreen = 'false';
 ##[customization]
 
 B:modpack_mode = 'false';
-B:show_customization_overlay = 'false';
-B:advanced_customization_mode = 'true';
+B:show_customization_overlay = 'true';
+B:advanced_customization_mode = 'false';
 
 
 ##[loading]
 
 B:preload_animations = 'true';
-S:preload_resources = '[source:local]config/fancymenu/assets/intro_animation.gif%!source_end!%[source:local]config/fancymenu/assets/mj_title.png%!source_end!%[source:local]config/fancymenu/assets/small_icon.png%!source_end!%[source:local]config/fancymenu/assets/intro_animation_ft.gif%!source_end!%';
+S:preload_resources = '';
 S:custom_game_intro_skip_text = '';
-B:allow_game_intro_skip = 'false';
+B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
 B:game_intro_fade_out = 'true';
 

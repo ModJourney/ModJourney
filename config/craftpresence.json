@@ -9,10 +9,10 @@
     "detectTechnicPack": true,
     "detectModrinthPack": true,
     "detectBiomeData": true,
-    "detectDimensionData": false,
-    "detectWorldData": false,
-    "clientId": "1271491623917977672",
-    "defaultIcon": "icon_512x512",
+    "detectDimensionData": true,
+    "detectWorldData": true,
+    "clientId": "450485984333660181",
+    "defaultIcon": "grass",
     "enableJoinRequests": false,
     "preferredClientLevel": 3,
     "resetTimeOnInit": false,
@@ -106,7 +106,7 @@
     "stripTranslationColors": false,
     "stripTranslationFormatting": false,
     "stripExtraGuiElements": false,
-    "configKeyCode": -1
+    "configKeyCode": 96
   },
   "displaySettings": {
     "presenceData": {
@@ -117,7 +117,7 @@
       "partyPrivacy": 1,
       "details": "{getFirst(menu.message, dimension.message)}",
       "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
-      "largeImageKey": "icon_512x512",
+      "largeImageKey": "{getFirst(menu.icon, dimension.icon)}",
       "largeImageText": "{getFirst(menu.message, dimension.message)}",
       "smallImageKey": "{getFirst(server.icon, pack.icon)}",
       "smallImageText": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
@@ -132,7 +132,7 @@
     },
     "dynamicIcons": {
       "default": "https://via.placeholder.com/256.png",
-      "localhost": "https://api.mcsrvstat.us/icon/localhost"
+      "robimor": "https://mc-heads.net/avatar/650b3211a0aa401da5f044e66aaa887d"
     },
     "dynamicVariables": {
       "default": "Example Text",

@@ -67,15 +67,15 @@
 		#The base number of 'burn ticks' performed per machine tick.
 		#Range: 0.001 ~ 1.7976931348623157E308
 		burnSpeed = 0.375
-		#The base amount of energy produced in uI/t.
-		#Range: > 1
-		generation = 40
 		#The base percentage efficiency, used to determine burn times.
 		#Range: 1 ~ 200
 		fuelEfficiencyBase = 80
 		#The efficiency increase per capacitor level.
 		#Range: 1 ~ 200
 		fuelEfficiencyStep = 20
+		#The base amount of energy produced in uI/t.
+		#Range: > 1
+		generation = 40
 
 	[energy.paintingMachine]
 		#The base energy capacity in uI.

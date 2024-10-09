@@ -128,7 +128,7 @@
 	#Laser Settings
 	[general.laser]
 		#If enabled, lasers can break blocks and the flamethrower starts fires.
-		aestheticWorldDamage = false
+		aestheticWorldDamage = true
 		#How far (in blocks) a laser can travel.
 		#Range: 1 ~ 1024
 		range = 64

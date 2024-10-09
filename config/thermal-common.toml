@@ -9,19 +9,19 @@
 
 		[World.Features.Apatite]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features.Silver]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features.Lead]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features.Nickel]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features."Rubberwood Trees"]
 			#Whether this feature should naturally spawn in the world.
@@ -29,15 +29,15 @@
 
 		[World.Features.Cinnabar]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features.Sulfur]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features.Tin]
 			#Whether this feature should naturally spawn in the world.
-			Enable = false
+			Enable = true
 
 		[World.Features.Niter]
 			#Whether this feature should naturally spawn in the world.

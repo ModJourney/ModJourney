@@ -2,7 +2,7 @@
 cowJarEnabled = true
 #The amount of milk the cow in a jar generates per tick.
 #Range: > -2147483648
-cowJarMilkPerTick = 10
+cowJarMilkPerTick = 1
 #Ex Compressum compatibility. Multiplier applied to the milk per tick for Compressed Cow in a Jar.
 #Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 compressedCowJarMilkMultiplier = 9.0
