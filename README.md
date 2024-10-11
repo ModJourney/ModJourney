@@ -24,6 +24,7 @@ introduces even vanilla players or mod beginners step by step into the world of 
 <!-- :flag_de: = german flag on gitlab -->
 <!-- &#x1f1e9; = Html-entity for unicode char: Displays "DE" or "D" instead of flag -->
 <!-- 🇩🇪  = Unicode char - only wrong displayed in phpstorm -->
+<!--
 &#x1f1e9;&#x1f1ea;
 German:
 
@@ -37,7 +38,7 @@ Und vielleicht findest du unterwegs auch ein paar einzigartige und neue Items.
 
 Das Pack ist für [Dylans Discord] Community erstellt, kann aber genauso gut im Single Player gespielt werden
 und führt auch Vanilla Spieler und Mod Einsteiger schrittweise an die Welt der Mod heran.
-
+-->
 
 
 ## Projectsetup (for Developer)
