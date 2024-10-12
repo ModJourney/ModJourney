@@ -39,7 +39,7 @@ BlockEvents.rightClicked(event => {
 
                 //Trifft keiner der oben genannten Punkte zu, ist das rechtsklicken im Spawn deaktiviert.
             } else {
-                if (event.block.id === "minecraft:birch_door") {
+                if (event.block.id === "minecraft:birch_door" || event.block.id === "waystones:waystone") {
 
                 } else {
                     event.cancel()
