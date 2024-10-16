@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.magic.mid
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.magic.mid
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.magic.mid
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.magic.mid
@@ -113,6 +113,13 @@ ServerEvents.recipes(event => {
     }).id('mod_journey:creative/creative_source_jar');
 
 
+    event.shapeless(
+        Item.of('ars_nouveau:annotated_codex', 1),
+        [
+            Item.of("ars_nouveau:archmage_spell_book"),
+            '5x mod_journey:gold_coin'
+        ]
+    ).id("mod_journey:creative/annotated_codex")
 
 
 });
