@@ -34,22 +34,22 @@
 		power: 4
 		ftbchunks.max_claimed: 75
 	}
-	event: {
-		name: "Event"
-		power: 600
-		ftbranks.name_format: "§5[Event]§r {name}"
-	}
-	roleplay: {
-		name: "Roleplay"
-		power: 700
-		ftbranks.name_format: "§3[RPlay]§r {name}"
-	}
+	#event: {
+	#	name: "Event"
+	#	power: 600
+	#	ftbranks.name_format: "§5[Event]§r {name}"
+	#}
+	#roleplay: {
+	#	name: "Roleplay"
+	#	power: 700
+	#	ftbranks.name_format: "§3[RPlay]§r {name}"
+	#}
 	# ingame support
-	support: {
-		name: "Support"
-		power: 800
-		ftbranks.name_format: "§2[Support]§r {name}"
-	}
+	#support: {
+	#	name: "Support"
+	#	power: 800
+	#	ftbranks.name_format: "§2[Support]§r {name}"
+	#}
 	# commands are defined via luckperms
 	orga: {
 		name: "Orga"
