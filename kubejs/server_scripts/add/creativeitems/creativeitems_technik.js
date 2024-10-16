@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.core
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.core
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.core
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.core
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.core
@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": "mod_journey:antimatter_block"
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
                 "item": stages.stage3.core
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
         ],
         "key": {
             "C": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "E": {
                 "item": "ae2:dense_energy_cell"
