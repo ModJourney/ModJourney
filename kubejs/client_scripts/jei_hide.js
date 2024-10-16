@@ -45,7 +45,10 @@ JEIEvents.hideItems(event => {
         'thermal:constantan_coin',
         'thermal:signalum_coin',
         'thermal:lumium_coin',
-        'thermal:enderium_coin'
+        'thermal:enderium_coin',
+        'thermal:gold_coin',
+        'thermal:silver_coin',
+        'thermal:bronze_coin'
     ];
 
     coins.forEach(element => {
