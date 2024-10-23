@@ -28,6 +28,21 @@ ServerEvents.recipes(event => {
        // todo extract crop-name without mod-prefix (split at :)
        let thermalOutput = `thermal:${inputCrop}_block`
 
+       /*
+       // recipeID e.g. thermal:storage/carrot_block
+       event.forEachRecipe([
+                {type: 'minecraft:crafting_shaped', input: inputCrop, mod: 'thermal'},
+                {type: 'minecraft:crafting_shaped', input: inputCrop, mod: 'thermal_cultivation',}
+            ], r => {
+
+           // todo store thermal recipeID and skip changing the farmers delight recipe, if this crop does not have a thermal recipe
+           if (r.getId().endsWith('_block')) {
+               console.log(r.getId())
+               console.log(r.json)
+           }
+       })*/
+
+
        /**
         * find storage block recipe (recipeID e.g. farmersdelight:carrot_crate)
         * and replace e.g.
