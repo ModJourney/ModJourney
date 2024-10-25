@@ -5,18 +5,20 @@ ServerEvents.recipes(event => {
         "type": "extendedcrafting:shaped_table",
         "tier": 4,
         "pattern": [
-            "GGGGG",
-            "GGGGG",
-            "GGCBG",
-            "GGGGG",
-            "GGGGG"
+            "   G   ",
+            " GGGGG ",
+            "GGGGGGG",
+            " GGCBG ",
+            "GGGGGGG",
+            " GGGGG ",
+            "   G   "
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
-                "item": stages.stage3.magic.mid
+                "item": stages.stage3.magic.end
             },
             "B": {
                 "item": stages.stage1.magic.mid
@@ -32,18 +34,20 @@ ServerEvents.recipes(event => {
         "type": "extendedcrafting:shaped_table",
         "tier": 4,
         "pattern": [
-            "GGGGG",
-            "GGGGG",
-            "GGCBG",
-            "GGGGG",
-            "GGGGG"
+            "   G   ",
+            " GGGGG ",
+            "GGGGGGG",
+            " GGCBG ",
+            "GGGGGGG",
+            " GGGGG ",
+            "   G   "
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
-                "item": stages.stage3.magic.mid
+                "item": stages.stage3.magic.end
             },
             "B": {
                 "item": stages.stage1.magic.end
@@ -63,18 +67,20 @@ ServerEvents.recipes(event => {
         "type": "extendedcrafting:shaped_table",
         "tier": 4,
         "pattern": [
-            "GGGGG",
-            "GGGGG",
-            "GGCBG",
-            "GGGGG",
-            "GGGGG"
+            "   G   ",
+            " GGGGG ",
+            "GGGGGGG",
+            " GGCBG ",
+            "GGGGGGG",
+            " GGGGG ",
+            "   G   "
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
-                "item": stages.stage3.magic.mid
+                "item": stages.stage3.magic.end
             },
             "B": {
                 "item": "apotheosis:endshelf"
@@ -90,18 +96,20 @@ ServerEvents.recipes(event => {
         "type": "extendedcrafting:shaped_table",
         "tier": 4,
         "pattern": [
-            "GGGGG",
-            "GGGGG",
-            "GGCBG",
-            "GGGGG",
-            "GGGGG"
+            "   G   ",
+            " GGGGG ",
+            "GGGGGGG",
+            " GGCBG ",
+            "GGGGGGG",
+            " GGGGG ",
+            "   G   "
         ],
         "key": {
             "G": {
-                "item": "thermal:gold_coin"
+                "item": "mod_journey:gold_coin"
             },
             "C": {
-                "item": stages.stage3.magic.mid
+                "item": stages.stage3.magic.end
             },
             "B": {
                 "item": "ars_nouveau:arcane_pedestal"
@@ -113,6 +121,13 @@ ServerEvents.recipes(event => {
     }).id('mod_journey:creative/creative_source_jar');
 
 
+    event.shapeless(
+        Item.of('ars_nouveau:annotated_codex', 1),
+        [
+            Item.of("ars_nouveau:archmage_spell_book"),
+            '5x mod_journey:gold_coin'
+        ]
+    ).id("mod_journey:creative/annotated_codex")
 
 
 });
