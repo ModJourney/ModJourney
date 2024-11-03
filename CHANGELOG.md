@@ -16,6 +16,9 @@
 
 - Oculus to 1.6.15a for Distant Horizon Support
 
+#### Recipes:
+- add Tags to immersive Molds, that they will work in Thermal Machines
+
 ---
 # v0.8.1
 
