@@ -1,3 +1,22 @@
+## Changelog:
+
+# v0.8.2
+
+#### Mods added:
+
+- Just Zoom
+- Limit Mob Spawn
+
+#### Mods removed:
+
+- Addon: Kubejs Ars Noveau
+- Addon: Kubejs BloodMagic
+
+#### Mods backport:
+
+- Oculus to 1.6.15a for Distant Horizon Support
+
+---
 # v0.8.1
 
 - Add mods occulus, embeddium
