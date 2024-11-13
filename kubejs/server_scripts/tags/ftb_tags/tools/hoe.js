@@ -101,8 +101,8 @@ let tools_hoe = {
         `undergarden:forgotten_hoe`,
         `ae2:certus_quartz_hoe`,
         `ae2:nether_quartz_hoe`,
-        `ae2:fluix_hoe`
-        `blue_skies:lunar_stone_hoe`
+        `ae2:fluix_hoe`,
+        `blue_skies:lunar_stone_hoe`,
         `blue_skies:turquoise_stone_hoe`
     ]
 }
