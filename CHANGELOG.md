@@ -21,6 +21,7 @@
  - Staging Botany Pots (KJS)
  - Craftable Ad Astra Guide Book (KJS)
  - fix Soul Vial and Imprison Tool (KJS)
+ - add thermal gear Recipe
 
 #### Config Changes:
  - disable new spawnable Mobs from Alex`s Mobs (this Mod will removed in a future Version)
