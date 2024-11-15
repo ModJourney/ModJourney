@@ -26,6 +26,7 @@
  - disable new spawnable Mobs from Alex`s Mobs (this Mod will removed in a future Version)
  - disable Baby Mob's from Mekanism
  - protect Skeleton Corpse, that only the owner can Looting his Corpse
+ - CarryOn (block Functional Storage correctly)
 
 #### Note:
  Please make sure, that you Backup your world, befor you're update you'r Modpack.
