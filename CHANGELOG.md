@@ -28,6 +28,7 @@
  - disable Baby Mob's from Mekanism
  - protect Skeleton Corpse, that only the owner can Looting his Corpse
  - CarryOn (block Functional Storage correctly)
+ - disable flux network chunk loading
 
 #### Note:
  Please make sure, that you Backup your world, befor you're update you'r Modpack.
