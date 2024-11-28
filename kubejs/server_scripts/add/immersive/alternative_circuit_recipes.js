@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     event.forEachRecipe({ id: 'thermal:machines/chiller/chiller_ender_to_ender_pearl' }, r => {
         let json = r.json;
         json.get('ingredients').get(0).add('fluid', 'immersiveengineering:phenolic_resin')
-        json.get('ingredients').get(1).add('item', 'immersiveengineering:mold_plate')
+        json.get('ingredients').get(1).add('item', 'thermal:chiller_ingot_cast')
         json.get('result').get(0).add('item', 'immersiveengineering:plate_duroplast')
         console.log(r.getId() +  ' ' + r.json);
 
