@@ -12,6 +12,7 @@
 - Add missing nugget recipe
 - Copper is stored correctly in compacting drawers now
 - Blacklist foregoing soul items for carry-on (this combination causes server crashes)
+- Blacklist enderio travel anchor for carry-on
 
 #### Recipes:
 - Add automatic sky steel ingot recipe for dissolution chamber, infuser
